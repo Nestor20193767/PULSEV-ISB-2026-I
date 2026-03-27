@@ -37,11 +37,11 @@ El desarrollo del software y procesamiento de datos estará fuertemente respalda
 | Nombre | Rol / Enfoque | Perfil de GitHub |
 | :--- | :--- | :--- |
 | **Natalie Sante** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
-| **Ana Angulo** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
+| **Ana Angulo** | Miembro del equipo (Por definir) | [@07ANA01](https://github.com/07ANA01) |
 | **Luis Loayza** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
-| **Nataly Deledesma** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
-| **Néstor Allende** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
-| **Bryan Loayza** | Miembro del equipo (Por definir) | [@usuario](https://github.com/)
+| **Nataly Deledesma** | Miembro del equipo (Por definir) | [@ndeledesma](https://github.com/ndeledesma) |
+| **Néstor Allende** | Miembro del equipo (Por definir) | [@Nestor20193767](https://github.com/Nestor20193767) |
+
 
 ---
 *Desarrollado para el curso de Introducción a Señales Biomédicas.*
