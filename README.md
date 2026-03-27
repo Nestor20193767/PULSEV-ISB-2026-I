@@ -44,4 +44,4 @@ El desarrollo del software y procesamiento de datos estará fuertemente respalda
 
 
 ---
-*Desarrollado para el curso de Introducción a Señales Biomédicas.*
+*Desarrollado para el curso de Introducción a Señales Biomédicas.                                                                                                                                                   UPCH*
