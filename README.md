@@ -1,2 +1,47 @@
-# PULSEV-ISB-2025-I
-Ester eporsitorio ha sido creado para el curso de Introduccion a señales biomedicas
+# 🫀 Introducción a Señales Biomédicas - ISB 2025-1
+
+Bienvenido al repositorio oficial del **[PULSE V]** para el curso de Introducción a Señales Biomédicas. En este espacio documentaremos nuestro progreso, desde los laboratorios iniciales hasta el desarrollo de nuestro proyecto final.
+
+## 🎯 Objetivos del Repositorio
+* Centralizar el código, bases de datos y documentación generada durante el curso.
+* Mantener un control de versiones eficiente para el trabajo colaborativo.
+* Documentar el proceso de diseño, adquisición y procesamiento de señales biomédicas.
+
+## 📂 Estructura del Repositorio
+
+El repositorio está organizado de la siguiente manera para mantener el orden de nuestros entregables:
+
+* **📁 1. CITI program - certificados**: Certificaciones de ética en investigación de los miembros del equipo.
+* **📁 2. Laboratorios**: Prácticas y ejercicios desarrollados a lo largo del ciclo.
+  * `Lab 1 - Git y Github` 
+  * `Lab 2 - [Nombre del laboratorio]`
+* **📁 3. Proyecto**: Documentación y código de nuestro proyecto final.
+  * `Hardware`: Esquemas, simulaciones y diseños de circuitos para la adquisición de señales.
+  * `Software`: Scripts de procesamiento, filtrado y análisis de datos.
+
+## 🚀 Sobre el Proyecto Final (En definición)
+
+Actualmente nos encontramos explorando y definiendo la temática central de nuestro proyecto final. Nuestro enfoque principal será el análisis y procesamiento de señales fisiológicas (como ECG, EMG o EEG) orientadas a resolver una problemática específica en el campo de la ingeniería biomédica.
+
+### 🛠️ Stack Tecnológico Principal
+El desarrollo del software y procesamiento de datos estará fuertemente respaldado por **Python** debido a su eficiencia y adaptabilidad en el análisis de datos. 
+
+*Herramientas y librerías previstas (Sujetas a cambio):*
+* **Procesamiento y Análisis:** `NumPy`, `SciPy`, `Pandas`
+* **Visualización:** `Matplotlib`, `Seaborn`
+* **Adquisición/Integración:** (Por definir, dependiendo del hardware utilizado)
+* **Modelado/IA (Opcional):** `Scikit-learn` o frameworks de aprendizaje automático si el proyecto escala hacia la clasificación de señales.
+
+## 👥 Equipo de Trabajo
+
+| Nombre | Rol / Enfoque | Perfil de GitHub |
+| :--- | :--- | :--- |
+| **Natalie Sante** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
+| **Ana Angulo** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
+| **Luis Loayza** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
+| **Nataly Deledesma** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
+| **Néstor Allende** | Miembro del equipo (Por definir) | [@usuario](https://github.com/) |
+| **Bryan Loayza** | Miembro del equipo (Por definir) | [@usuario](https://github.com/)
+
+---
+*Desarrollado para el curso de Introducción a Señales Biomédicas.*
