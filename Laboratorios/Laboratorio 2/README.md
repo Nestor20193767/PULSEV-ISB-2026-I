@@ -87,14 +87,7 @@ La literatura avala la combinación **Pan-Tompkins + SVM/k-NN** para clasificaci
 
 ## 📅 Plan de Actividades (15 semanas)
 
-| Fase | Actividad | Semanas |
-|:----:|-----------|:-------:|
-| 1 | Revisión de literatura y preparación | 1 – 3 |
-| 2 | Procesamiento de señal ECG (Pan-Tompkins) | 3 – 6 |
-| 3 | Extracción de métricas HRV | 6 – 8 |
-| 4 | Entrenamiento de modelos ML | 8 – 11 |
-| 5 | Integración y pruebas end-to-end | 11 – 13 |
-| 6 | Documentación y entrega final | 13 – 15 |
+![Diagrama de Gantt](plan_actividades_gantt.png)
 
 ### Descripción de Fases
 
