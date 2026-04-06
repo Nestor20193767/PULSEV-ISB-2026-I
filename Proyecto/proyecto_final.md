@@ -68,6 +68,7 @@ El desarrollo del proyecto se organiza en **seis fases secuenciales** a lo largo
 
 ### Diagrama de Gantt
 
+![Texto alternativo](ruta-de-la-imagen)
 
 *Figura 1. Diagrama de Gantt del plan de actividades (15 semanas).*
 
@@ -115,8 +116,4 @@ El desarrollo del proyecto se organiza en **seis fases secuenciales** a lo largo
 
 ---
 
-## 👥 Equipo de Trabajo
 
-*Proyecto de Ingeniería Biomédica*
-
-📧 Para consultas o colaboraciones, por favor abrir un *issue* en este repositorio.
