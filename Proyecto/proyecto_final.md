@@ -85,7 +85,7 @@ El desarrollo del proyecto se organiza en **seis fases secuenciales** a lo largo
 
 - **Fase 6 — Documentación y Cierre (Semanas 13–15)**: Redacción del informe técnico, elaboración de figuras/tablas, preparación de la presentación final y entrega de todos los entregables.
 
-## 📚 Referencias
+## Referencias
 
 [1] Top Doctors, *Fisioterapia y sistema nervioso autónomo: el papel clave de la variabilidad cardiaca (HRV)*, 2025. [En línea]. Disponible: https://www.topdoctors.es/articulos-medicos/fisioterapia-y-sistema-nervioso-autonomo-el-papel-clave-de-la-variabilidad-cardiaca-hrv/
 
