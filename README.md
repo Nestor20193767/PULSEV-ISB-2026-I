@@ -21,7 +21,7 @@ El repositorio está organizado de la siguiente manera para mantener el orden de
 
 ## 🚀 Sobre el Proyecto Final (En definición)
 
-Actualmente nos encontramos explorando y definiendo la temática central de nuestro proyecto final. Nuestro enfoque principal será el análisis y procesamiento de señales fisiológicas (como ECG, EMG o EEG) orientadas a resolver una problemática específica en el campo de la ingeniería biomédica.
+Se puede encontrar a detalle la tematica del proyecto en el siguiennte [link](https://github.com/Nestor20193767/PULSEV-ISB-2026-I/blob/main/Proyecto/proyecto_final.md)
 
 ### 🛠️ Stack Tecnológico Principal
 El desarrollo del software y procesamiento de datos estará fuertemente respaldado por **Python** debido a su eficiencia y adaptabilidad en el análisis de datos. 
