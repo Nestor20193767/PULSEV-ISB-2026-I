@@ -60,29 +60,6 @@ Estos factores modifican la morfología del ECG y dificultan la localización pr
 
 Se propone un **pipeline algorítmico en tres fases** para extraer HRV de manera confiable en entornos académicos:
 
-```
-Señal ECG cruda
-      │
-      ▼
-┌──────────────────────────┐
-│  FASE 1                  │
-│  Filtrado +              │
-│  Algoritmo Pan-Tompkins  │  ──► Detección precisa de picos R
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│  FASE 2                  │
-│  Extracción de HRV       │  ──► Intervalos RR → SDNN, RMSSD, pNN50, LF, HF
-└────────────┬─────────────┘
-             │
-             ▼
-┌──────────────────────────┐
-│  FASE 3                  │
-│  Clasificación ML        │  ──► SVM / k-NN / Árbol de Decisión
-└──────────────────────────┘
-```
-
 ### 🔧 Fase 1 — Filtrado y Detección de Picos R (Pan-Tompkins)
 
 El algoritmo de **Pan-Tompkins** es un estándar eficiente para la detección de complejos QRS y la extracción de intervalos RR [11][12]. Atenúa artefactos de movimiento, ruido muscular y variaciones de línea base propios de la actividad del usuario [13], garantizando una localización temporal precisa con costo computacional mínimo.
