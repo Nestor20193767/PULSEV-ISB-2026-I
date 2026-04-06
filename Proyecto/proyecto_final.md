@@ -1,4 +1,4 @@
-# 🧠 Detección de Estrés Académico mediante Análisis de HRV en Señales ECG
+# Detección de Estrés Académico mediante Análisis de HRV en Señales ECG
 
 > Procesamiento de señal ECG · Algoritmo Pan-Tompkins · HRV · Machine Learning
 
@@ -6,7 +6,7 @@
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Estado del proyecto](https://img.shields.io/badge/Estado-En%20desarrollo-brightgreen)]()
 
-## 📖 Introducción
+## Introducción
 
 En los últimos años, el estrés académico ha cobrado mayor relevancia como problema de salud en estudiantes universitarios, debido a la alta exigencia académica, la sobrecarga de actividades y la constante presión por el rendimiento. Todas estas condiciones generan un impacto negativo en los estudiantes: además de afectar su bienestar psicológico, también afectan las respuestas fisiológicas del organismo.
 
@@ -14,7 +14,7 @@ Desde una perspectiva fisiológica, el estrés académico activa el sistema nerv
 
 Por lo tanto, en este contexto, la **variabilidad de la frecuencia cardíaca (HRV)** se ha convertido en un biomarcador no invasivo utilizado para evaluar el balance autonómico y la capacidad del organismo para adaptarse a situaciones de estrés [3]. Por otro lado, el **electrocardiograma (ECG)** es una herramienta fundamental en el análisis de señales biomédicas porque permite registrar la actividad eléctrica del corazón y obtener parámetros importantes para nuestro proyecto, como los intervalos **RR**, a partir de los cuales se calcula la HRV [4].
 
-## 🎯 Problemática a Abordar
+## Problemática a Abordar
 
 En el contexto universitario, se ha observado que los periodos de evaluación académica se asocian con cambios significativos en la HRV, lo que respalda su utilidad como indicador fisiológico del estrés académico. Para este análisis, la HRV suele evaluarse mediante métricas del dominio temporal y frecuencial, como se detalla en la siguiente tabla:
 
@@ -35,7 +35,7 @@ Aunque existen algoritmos de detección de picos R con buen desempeño en señal
 
 Asimismo, un filtrado insuficiente o una detección poco robusta puede generar falsos positivos, falsos negativos o errores en la localización temporal de los picos R, afectando directamente la estimación de los intervalos RR y, en consecuencia, la validez de las métricas de HRV. Finalmente, la literatura reciente muestra limitaciones metodológicas importantes en estudios con wearables en población universitaria [9], existiendo una brecha en el desarrollo de estrategias de procesamiento para entornos académicos cotidianos.
 
-## 🚀 Propuesta de Solución
+## Propuesta de Solución
 
 **Motor Algorítmico basado en Pan-Tompkins y Machine Learning Tradicional**
 
@@ -62,7 +62,7 @@ A partir de la detección exacta de los picos R, se extraerán los intervalos RR
 
 Las características extraídas alimentarán modelos de **Machine Learning tradicional** (SVM, k-NN, Árbol de Decisión), evitando redes neuronales profundas costosas. La literatura respalda la robustez de combinar Pan-Tompkins con estos clasificadores para categorización de señales cardiovasculares [11], [13], [14], logrando alta precisión, modelos interpretables y rápida inferencia, viables para despliegue en wearables.
 
-## 📅 Plan de Actividades
+## Plan de Actividades
 
 El desarrollo del proyecto se organiza en **seis fases secuenciales** a lo largo de **15 semanas**, asegurando un avance estructurado desde la revisión teórica hasta la entrega del informe final.
 
