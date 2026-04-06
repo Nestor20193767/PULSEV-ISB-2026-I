@@ -69,7 +69,7 @@ El desarrollo del proyecto se organiza en **seis fases secuenciales** a lo largo
 ### Diagrama de Gantt
 
 ![*Figura 1. Diagrama de Gantt del plan de actividades (15 semanas).*](https://github.com/Nestor20193767/PULSEV-ISB-2026-I/blob/main/Proyecto/imagenes/plan_actividades_gantt.png)
-
+*Figura 1. Diagrama de Gantt del plan de actividades (15 semanas).*
 
 ### Descripción de Fases
 
