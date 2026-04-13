@@ -36,11 +36,11 @@ El desarrollo del software y procesamiento de datos estará fuertemente respalda
 
 | Nombre | Rol / Enfoque | Perfil de GitHub | Foto |
 | :--- | :--- | :--- | :---: |
-| **Natalie Sante** | Miembro del equipo (Por definir) | [@NATMIL27](https://github.com/NATMIL27) |  |
+| **Natalie Sante** | Miembro del equipo (Por definir) | [@NATMIL27](https://github.com/NATMIL27) | <img src="fotos/Luis Loayza.jpg" width="100" width="120"> |
 | **Ana Angulo** | Miembro del equipo (Por definir) | [@07ANA01](https://github.com/07ANA01) |<img src="fotos/Ana C Angulo.jpg" width="100" width="120">  |
 | **Luis Loayza** | Miembro del equipo (Por definir) | [@LUIS-LOAYZA](https://github.com/LUIS-LOAYZA) | <img src="fotos/Luis Loayza.jpg" width="100" width="120"> |
-| **Nataly Deledesma** | Miembro del equipo (Por definir) | [@ndeledesma](https://github.com/ndeledesma) |  |
-| **Néstor Allende** | Miembro del equipo (Por definir) | [@Nestor20193767](https://github.com/Nestor20193767) |  |
+| **Nataly Deledesma** | Miembro del equipo (Por definir) | [@ndeledesma](https://github.com/ndeledesma) | <img src="fotos/Luis Loayza.jpg" width="100" width="120"> |
+| **Néstor Allende** | Miembro del equipo (Por definir) | [@Nestor20193767](https://github.com/Nestor20193767) | <img src="fotos/Luis Loayza.jpg" width="100" width="120"> |
 
 
 ---
