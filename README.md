@@ -1,4 +1,4 @@
-# 🫀 Introducción a Señales Biomédicas - ISB 2025-1
+# 🫀 Introducción a Señales Biomédicas - ISB 2026-1
 
 Bienvenido al repositorio oficial del **[PULSE V]** para el curso de Introducción a Señales Biomédicas. En este espacio documentaremos nuestro progreso, desde los laboratorios iniciales hasta el desarrollo de nuestro proyecto final.
 
@@ -38,7 +38,7 @@ El desarrollo del software y procesamiento de datos estará fuertemente respalda
 | :--- | :--- | :--- | :---: |
 | **Natalie Sante** | Miembro del equipo (Por definir) | [@NATMIL27](https://github.com/NATMIL27) |  |
 | **Ana Angulo** | Miembro del equipo (Por definir) | [@07ANA01](https://github.com/07ANA01) |<img src="fotos/Ana Angulo.jpg" width="100" width="120">  |
-| **Luis Loayza** | Miembro del equipo (Por definir) | [@LUIS-LOAYZA](https://github.com/LUIS-LOAYZA) | <img src="fotos/Ana Angulo.jpg" width="100" width="120"> |
+| **Luis Loayza** | Miembro del equipo (Por definir) | [@LUIS-LOAYZA](https://github.com/LUIS-LOAYZA) | <img src="fotos/Luis Loayza.jpg" width="100" width="120"> |
 | **Nataly Deledesma** | Miembro del equipo (Por definir) | [@ndeledesma](https://github.com/ndeledesma) |  |
 | **Néstor Allende** | Miembro del equipo (Por definir) | [@Nestor20193767](https://github.com/Nestor20193767) |  |
 
