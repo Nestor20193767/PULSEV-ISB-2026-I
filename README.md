@@ -37,8 +37,7 @@ El desarrollo del software y procesamiento de datos estará fuertemente respalda
 | Nombre | Rol / Enfoque | Perfil de GitHub | Foto |
 | :--- | :--- | :--- | :---: |
 | **Natalie Sante** | Miembro del equipo (Por definir) | [@NATMIL27](https://github.com/NATMIL27) |  |
-| **Ana Angulo** | Miembro del equipo (Por definir) | [@07ANA01](https://github.com/07ANA01) | 
-<img src="fotos/Ana Angulo.jpg" width="90">  |
+| **Ana Angulo** | Miembro del equipo (Por definir) | [@07ANA01](https://github.com/07ANA01) |<img src="fotos/Ana Angulo.jpg" width="90">  |
 | **Luis Loayza** | Miembro del equipo (Por definir) | [@LUIS-LOAYZA](https://github.com/LUIS-LOAYZA) | <img src="fotos/Luis Loayza.jpg" width="90"> |
 | **Nataly Deledesma** | Miembro del equipo (Por definir) | [@ndeledesma](https://github.com/ndeledesma) |  |
 | **Néstor Allende** | Miembro del equipo (Por definir) | [@Nestor20193767](https://github.com/Nestor20193767) |  |
