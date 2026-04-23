@@ -179,71 +179,125 @@ La señal fue procesada y visualizada utilizando Python con las librerías `nump
 ### Código utilizado
 
 ```python
-import numpy as np
+
+!pip install opensignalsreader
+
+from google.colab import drive
+drive.mount('/content/drive')
+
+baseline_brazo = "/content/drive/MyDrive/senalesBitalino/BASELINEBRAZO.txt"
+baseline_mano = "/content/drive/MyDrive/senalesBitalino/BASELINEMANO.txt"
+
+emg_mano = "/content/drive/MyDrive/senalesBitalino/PRUEBAMANO3.txt"
+emg_brazo ="/content/drive/MyDrive/senalesBitalino/PRUEBABRAZO1.txt"
+
+import opensignalsreader as osr
+from opensignalsreader import OpenSignalsReader
 import matplotlib.pyplot as plt
-import pandas as pd
+import numpy as np
+from scipy.signal import butter, lfilter, welch
 
-# ── 1. Cargar el archivo de señal exportado desde OpenSignals ──────────────
-# El archivo .txt de OpenSignals tiene un encabezado de comentarios (líneas con #)
-# Ajusta el nombre del archivo según corresponda
-archivo = "señal_EMG.txt"
+# Read OpenSignals file and plot all signals for baseline (hand and arm) and EMG (hand and arm)
 
-# Leer el archivo ignorando las líneas de encabezado
-df = pd.read_csv(archivo, comment='#', sep='\t', header=None)
+# Lista de todas las rutas de los archivos de señales
+signal_files = [
+    baseline_mano,
+    baseline_brazo,
+    emg_mano,
+    emg_brazo
+]
 
-# La columna de la señal EMG depende del canal usado (usualmente columna 5 o 6)
-# Verifica en tu archivo cuál columna corresponde al canal EMG
-canal_emg = df.iloc[:, 5].values  # Ajusta el índice de columna si es necesario
+# Iterar sobre cada archivo y plotear todas sus señales
+for file_path in signal_files:
+    print(f"Plotting signals from: {file_path}")
+    acq = OpenSignalsReader(file_path, show=True)
 
-# ── 2. Parámetros de adquisición ───────────────────────────────────────────
-fs = 1000  # Frecuencia de muestreo en Hz (1000 Hz por defecto en BITalino)
-n  = len(canal_emg)
-t  = np.arange(n) / fs  # Vector de tiempo en segundos
+# Definimos la frecuencia de muestreo (fs).
+fs = 1000
 
-# ── 3. Conversión de unidades: ADC → mV ────────────────────────────────────
-# BITalino usa ADC de 10 bits, VCC = 3.3V, ganancia del sensor EMG = 1000
-VCC    = 3.3
-ADC_n  = 1024
-Gain   = 1000
-emg_mv = ((canal_emg / ADC_n) * VCC - VCC / 2) / Gain * 1000  # en mV
+for file_path in signal_files:
+    # Extraemos el nombre del archivo
+    nombre_archivo = file_path.split('/')[-1].replace('.txt', '')
+    print(f"--- Procesando y graficando: {nombre_archivo} ---")
 
-# ── 4. Visualización ───────────────────────────────────────────────────────
-fig, axes = plt.subplots(2, 1, figsize=(14, 8), sharex=True)
-fig.suptitle("Señal EMG — BITalino (r)evolution", fontsize=14, fontweight='bold')
+    # Leer el archivo
+    acq = osr.OpenSignalsReader(file_path)
 
-# Señal cruda
-axes[0].plot(t, emg_mv, color='steelblue', linewidth=0.6, label='EMG cruda')
-axes[0].set_ylabel("Amplitud [mV]")
-axes[0].set_title("Señal EMG cruda")
-axes[0].axhline(0, color='gray', linewidth=0.5, linestyle='--')
-axes[0].legend(loc='upper right')
-axes[0].grid(True, alpha=0.3)
+    # Buscamos automáticamente en qué canal de Bitalino hay datos
+    senial = None
+    canal_encontrado = ""
 
-# Envolvente (RMS deslizante)
-window_ms  = 100  # ventana de 100 ms
-window_smp = int(window_ms * fs / 1000)
-rms = np.array([
-    np.sqrt(np.mean(emg_mv[max(0, i - window_smp):i + 1] ** 2))
-    for i in range(n)
-])
-axes[1].plot(t, rms, color='tomato', linewidth=1.2, label=f'RMS ({window_ms} ms)')
-axes[1].set_ylabel("RMS [mV]")
-axes[1].set_xlabel("Tiempo [s]")
-axes[1].set_title("Envolvente RMS")
-axes[1].legend(loc='upper right')
-axes[1].grid(True, alpha=0.3)
+    for ch in range(1, 7):
+        try:
+            senial = acq.signal(ch)
+            canal_encontrado = f"Canal {ch}"
+            break
+        except:
+            continue
 
-plt.tight_layout()
-plt.savefig("EMG_ploteo_python.png", dpi=150, bbox_inches='tight')
-plt.show()
-print("Gráfica guardada como EMG_ploteo_python.png")
+    if senial is None:
+        print(f"No se encontraron canales válidos (1-6) en {file_path}")
+        continue
+
+    # Restamos la media para centrar la señal
+    senial = senial - np.mean(senial)
+
+    # -------------------------------------------------
+    # REDUCIMOS EL TAMAÑO AQUÍ: figsize=(ancho, alto)
+    # -------------------------------------------------
+    fig, axs = plt.subplots(3, 1, figsize=(8, 7))
+
+    # Título principal (le bajé un poquito el tamaño de la letra a 16)
+    fig.suptitle(f'Análisis de Señal: {nombre_archivo} ({canal_encontrado})',
+                 fontsize=16, fontweight='bold', color='darkblue')
+
+    # Ajustamos el espaciado (pad más pequeño) para este nuevo tamaño
+    fig.tight_layout(pad=3.0, rect=[0, 0, 1, 0.95])
+
+    # -------------------------------------------------
+    # 1. SEÑAL EN EL TIEMPO (RAW)
+    # -------------------------------------------------
+    tiempo = np.arange(len(senial)) / fs
+    axs[0].plot(tiempo, senial, color='royalblue', linewidth=0.8)
+    axs[0].set_title('Señal en el Dominio del Tiempo', fontsize=12, fontweight='bold')
+    axs[0].set_xlabel('Tiempo [s]', fontsize=10)
+    axs[0].set_ylabel('Amplitud [mV]', fontsize=10)
+    axs[0].grid(True, linestyle='--', alpha=0.7)
+
+    # -------------------------------------------------
+    # 2. TRANSFORMADA RÁPIDA DE FOURIER (FFT)
+    # -------------------------------------------------
+    N = len(senial)
+    fft_vals = np.fft.fft(senial)
+    fft_freqs = np.fft.fftfreq(N, 1/fs)
+
+    half_N = N // 2
+    axs[1].plot(fft_freqs[:half_N], np.abs(fft_vals)[:half_N], color='crimson', linewidth=0.8)
+    axs[1].set_title('Espectro de Frecuencia (FFT)', fontsize=12, fontweight='bold')
+    axs[1].set_xlabel('Frecuencia [Hz]', fontsize=10)
+    axs[1].set_ylabel('Magnitud', fontsize=10)
+    axs[1].set_xlim(0, fs/2)
+    axs[1].grid(True, linestyle='--', alpha=0.7)
+
+    # -------------------------------------------------
+    # 3. ESPECTROGRAMA (STFT)
+    # -------------------------------------------------
+    Pxx, freqs, bins, im = axs[2].specgram(senial, NFFT=256, Fs=fs, noverlap=128, cmap='viridis')
+    axs[2].set_title('Espectrograma (STFT)', fontsize=12, fontweight='bold')
+    axs[2].set_xlabel('Tiempo [s]', fontsize=10)
+    axs[2].set_ylabel('Frecuencia [Hz]', fontsize=10)
+
+    cbar = fig.colorbar(im, ax=axs[2])
+    cbar.set_label('Densidad de Potencia (dB)', rotation=270, labelpad=15)
+
+    plt.show()
 ```
 
 ### 📊 Resultado del ploteo en Python
 
 ```
 Insertar imagen generada por Python aquí:
-![Ploteo Python EMG](./imagenes/EMG_ploteo_python.png)
+![Baseline de Mano](./Videos y Fotos/Ploteo de Señales/BASELINE_BRAZO.jpeg)
 ```
 
 > *Figura: Señal EMG procesada en Python. Panel superior: señal cruda en mV. Panel inferior: envolvente RMS con ventana deslizante de 100 ms, que permite visualizar mejor la activación muscular a lo largo del tiempo.*
