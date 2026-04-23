@@ -315,8 +315,9 @@ for file_path in signal_files:
 |---|---|
 | `señal_EMG.txt` | Archivo raw exportado desde OpenSignals (r)evolution |
 | `ploteo_EMG.py` | Script de Python para procesamiento y visualización |
-| `imagenes/` | Carpeta con capturas de pantalla y fotos |
-| `videos/` | Carpeta con video de reposo/silencio eléctrico |
+| `Videos y Fotos/` | Carpeta con capturas de fotos y videos del laboratorio |
+| `Ploteo de Señales/` | Carpeta con capturas de las señales con su fft y sft|
+
 
 ---
 
