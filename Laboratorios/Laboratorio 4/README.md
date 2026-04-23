@@ -313,8 +313,6 @@ for file_path in signal_files:
 - Se confirma que la amplitud del EMG **no equivale directamente a la fuerza** generada, sino que es una estimación de la actividad eléctrica (reclutamiento de unidades motoras), influida además por factores como el tejido subcutáneo y la posición de los electrodos.
 
 ---
----
-
 ## Referencias
 
 1. BITalino (r)evolution Home Guide #1 — Electromyography (EMG). PLUX – Wireless Biosignals, S.A. (2021).
@@ -323,7 +321,10 @@ for file_path in signal_files:
 4. Criswell, E. *Cram's Introduction to Surface Electromyography*. Jones & Bartlett Publishers, 2010.
 5. SENIAM — Recommended sensor placements: http://www.seniam.org/
 
+---
+
 ## Preguntas de la Guia
+
 **Q1. ¿Cuáles son las frecuencias significativas para las adquisiciones de EMG? ¿Son las mismas en todas las áreas del cuerpo, como el área facial?**
 
 Para las señales de electromiografía de superficie (sEMG), la banda de frecuencia típica que contiene la información de la actividad muscular se encuentra entre los 20 y los 450 Hz. Esta banda estándar se aplica para la evaluación de músculos esqueléticos voluntarios en general. Sin embargo, la distribución espectral exacta puede variar sutilmente dependiendo del área del cuerpo, ya que está ligada al tamaño del músculo y a la cantidad de fibras musculares. Por ejemplo, los músculos grandes de las extremidades superiores difieren de los músculos finos del rostro (controlados por menos unidades motoras). En el caso escogido del pulgar, al realizar el movimiento de pinza (_pitching_), estamos evaluando fibras diseñadas para la motricidad fina y precisión, pero su señal eléctrica superficial sigue siendo procesada óptimamente dentro de este mismo filtro pasabanda de 20-450 Hz. [1]
