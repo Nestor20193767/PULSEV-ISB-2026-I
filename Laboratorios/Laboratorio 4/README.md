@@ -73,10 +73,7 @@ Los electrodos se posicionaron siguiendo la configuración bipolar estándar:
 
 #### 📸 Foto de conexiones — BITalino y cables
 
-```
-Insertar imagen aquí:
-![Conexión BITalino-cables](./imagenes/bitalino_cables.jpg)
-```
+<img src="./Videos%20y%20Fotos/bitalino.jpeg" width="350">
 
 > *Descripción: Vista del sensor EMG ensamblado conectado al BITalino (r)evolution Core BT mediante el cable de referencia en el puerto analógico correspondiente.*
 
