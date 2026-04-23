@@ -113,7 +113,7 @@ Durante la fase de reposo, la señal EMG mostró una línea base cercana a **0 m
 
 #### 🎥 Video — Silencio eléctrico y conexiones
 
-<a href="./Videos%20y%20Fotos/video_mano.mov">
+<a href="./Videos%20y%20Fotos/video_mano.mp4">
   <img src="./Videos%20y%20Fotos/electrodos_mano.jpg" width="350">
 </a>
 
