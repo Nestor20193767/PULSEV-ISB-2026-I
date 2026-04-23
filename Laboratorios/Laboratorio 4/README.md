@@ -67,7 +67,7 @@ Los electrodos se posicionaron siguiendo la configuración bipolar estándar:
 
 #### 📸 Foto de conexiones — Electrodos en cuerpo
 
-![Colocación de electrodos](./Videos%20y%20Fotos/Colocación%20de%20electrodos.jpg)
+![Colocación de electrodos](./Videos%20y%20Fotos/electrodos_mano.jpg)
 
 > *Descripción: Posicionamiento de los electrodos IN+ e IN− sobre el músculo [nombre del músculo] y electrodo de referencia en [zona neutra].*
 
