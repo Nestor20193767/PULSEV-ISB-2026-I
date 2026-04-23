@@ -59,9 +59,8 @@ En esta práctica se utilizó el sistema **BITalino (r)evolution** con el sensor
 Los electrodos se posicionaron siguiendo la configuración bipolar estándar:
 
 - **IN+ e IN−**: sobre el vientre muscular, alineados con la fibra muscular, con separación de ~2 cm.
-- **REF (referencia)**: sobre una zona neutra ósea (codo, muñeca o mastoides según el músculo).
+- **REF (referencia)**: sobre una zona neutra ósea.
 
-> ⚠️ Antes de colocar los electrodos se limpió la piel con alcohol para reducir la impedancia y mejorar la calidad de la señal.
 
 #### 📸 Foto de conexiones — Electrodos en cuerpo
 
@@ -93,10 +92,8 @@ Se siguió el protocolo indicado en el **Home-Guide #1**, sección 6.2:
 
 | # | Músculo | Zona | Acción para activar |
 |---|---|---|---|
-| 1 | Flexor carpi radialis | Antebrazo | Extensión de la muñeca |
-| 2 | Abductor pollicis brevis | Pulgar | Abducción del pulgar |
-| 3 | Trapezius descendens | Hombro/cuello | Elevación del hombro |
-| 4 | Zygomaticus major | Mejilla | Sonreír |
+| 1 | Abductor pollicis brevis | Pulgar | Abducción del pulgar |
+| 2 | Biceps | Brazo| Contracción del bicep |
 
 ---
 
