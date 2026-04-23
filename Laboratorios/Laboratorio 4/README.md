@@ -313,6 +313,7 @@ for file_path in signal_files:
 - Se confirma que la amplitud del EMG **no equivale directamente a la fuerza** generada, sino que es una estimación de la actividad eléctrica (reclutamiento de unidades motoras), influida además por factores como el tejido subcutáneo y la posición de los electrodos.
 
 ---
+---
 
 ## Referencias
 
@@ -347,8 +348,10 @@ La morfología de la señal cumplió con la teoría fisiológica: se observó un
 No, no existe una equivalencia lineal estricta entre la amplitud de la señal (mV) y la fuerza mecánica producida (Newtons), aunque sí se encuentran altamente correlacionadas y pudimos verlo durante el laboratorio. A mayor requerimiento de fuerza, el sistema neuromuscular lógicamente recluta más unidades motoras y eleva la frecuencia de disparo de los potenciales de acción.
 
 Sin embargo, diversos factores complican esta relación directa en la superficie: el grosor del tejido adiposo, la alta impedancia de la piel, y la superposición de señales de músculos adyacentes (_crosstalk_). Además, durante episodios de fatiga, la amplitud puede mostrar un aumento inicial paradójico (por reclutamiento compensatorio) seguido de una reducción paulatina. Los estudios biomecánicos confirman esta falta de equivalencia 1:1 en la electromiografía superficial.
+---
 
 ## Bibliografia de las preguntas
+
 1. J. Moreno Jiménez, A. Hernández Zavala, and A. G. Morales Hernández, "High density surface electromyography: A review of technology and its applications," _Measurement and Control_, Apr. 2026, doi: 10.1177/00202940251396.
 2. J. L. Correa-Figueroa, E. Morales-Sánchez, J. A. Huerta-Ruelas, J. J. González-Barbosa, and C. R. Cárdenas-Pérez, "Sistema de Adquisición de Señales SEMG para la Detección de Fatiga Muscular," _Revista Mexicana de Ingeniería Biomédica_, vol. 37, no. 1, pp. 17-27, Jan.-Apr. 2016, doi: 10.17488/RMIB.37.1.4.
 3. J. J. Bernal Sánchez and E. C. Wilches Luna, "Electromiografía de superficie (EMGs) en pacientes adultos en cuidados intensivos: revisión exploratoria," _Revista Colombiana de Medicina Física y Rehabilitación_, vol. 31, no. 1, Jan.-Jun. 2021, doi: 10.28957/rcmfr.v31n1a1.
