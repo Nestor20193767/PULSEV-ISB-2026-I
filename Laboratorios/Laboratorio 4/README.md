@@ -134,7 +134,7 @@ A continuación se presenta el ploteo de la señal EMG adquirida con OpenSignals
 
 ```
 Insertar captura de pantalla aquí:
-![Señal EMG en OpenSignals](./imagenes/opensignals_EMG.png)
+![Señal EMG en OpenSignals](https://github.com/Nestor20193767/PULSEV-ISB-2026-I/blob/main/Laboratorios/Laboratorio%204/Videos%20y%20Fotos/Ploteo%20de%20Se%C3%B1ales/BASELINE_BRAZO.jpeg)
 ```
 
 > *Figura: Señal EMG del músculo [nombre] adquirida con BITalino. Se observan las fases de reposo (línea base ~0 mV) y las fases de contracción (picos de amplitud creciente). El eje X representa el tiempo [s] y el eje Y la amplitud de la señal [mV].*
