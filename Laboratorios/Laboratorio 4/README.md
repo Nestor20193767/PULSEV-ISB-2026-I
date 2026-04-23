@@ -1,10 +1,8 @@
 # 🧠 Laboratorio N°4 de Señales Biomédicas — Home Guide #1
 ## Electromiografía (EMG) — BITalino (r)evolution
 
-> **Curso:** Introducción a Señales Biomédicas  
-> **Integrantes:** [Nombre 1], [Nombre 2], [Nombre 3]  
+
 > **Fecha:** Abril 2026  
-> **Repositorio:** [link a tu repositorio]
 
 ---
 
@@ -69,7 +67,7 @@ Los electrodos se posicionaron siguiendo la configuración bipolar estándar:
 
 <img src="./Videos%20y%20Fotos/electrodos_mano.jpg" width="400">
 
-> *Descripción: Posicionamiento de los electrodos IN+ e IN− sobre el músculo [nombre del músculo] y electrodo de referencia en [zona neutra].*
+> *Descripción: Posicionamiento de los electrodos IN+ e IN− sobre los músculos abductores del pulgar y electrodo de referencia en el hueso pisiforme.*
 
 #### 📸 Foto de conexiones — BITalino y cables
 
@@ -124,7 +122,7 @@ A continuación se presenta el ploteo de la señal EMG adquirida con OpenSignals
 
 <img src="./Videos%20y%20Fotos/open.jpeg" width="350">
 
-> *Figura: Señal EMG del músculo [nombre] adquirida con BITalino. Se observan las fases de reposo (línea base ~0 mV) y las fases de contracción (picos de amplitud creciente). El eje X representa el tiempo [s] y el eje Y la amplitud de la señal [mV].*
+> *Figura: Señal EMG del músculo abductor del pulgar adquirida con BITalino. Se observan las fases de reposo (línea base ~0 mV) y las fases de contracción (picos de amplitud creciente). El eje X representa el tiempo [s] y el eje Y la amplitud de la señal [mV].*
 ### Análisis de la Señal
 
 #### Descripción general
