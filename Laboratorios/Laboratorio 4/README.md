@@ -113,11 +113,11 @@ Durante la fase de reposo, la señal EMG mostró una línea base cercana a **0 m
 
 #### 🎥 Video — Silencio eléctrico y conexiones
 
-<a href="./Videos%20y%20Fotos/video_mano.mp4">
+<a href="https://drive.google.com/file/d/1qOJFOMncmBl9PxWoGGpPpBXtXr_84JX-/view?usp=sharing" target="_blank">
   <img src="./Videos%20y%20Fotos/electrodos_mano.jpg" width="350">
 </a>
 
-> *El video muestra: (1) las conexiones de los electrodos sobre el cuerpo, (2) la señal EMG ploteada en tiempo real en OpenSignals durante el estado de reposo.*
+> *Haz clic en la imagen para ver el video en Google Drive.*
 
 ### Señal en OpenSignals
 
