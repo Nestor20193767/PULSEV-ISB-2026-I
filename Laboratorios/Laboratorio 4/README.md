@@ -321,3 +321,36 @@ for file_path in signal_files:
 3. Basmajian, J.V. & De Luca, C.J. *Muscles Alive: Their Functions Revealed by Electromyography*, 5th ed. Williams & Wilkins, 1985.
 4. Criswell, E. *Cram's Introduction to Surface Electromyography*. Jones & Bartlett Publishers, 2010.
 5. SENIAM — Recommended sensor placements: http://www.seniam.org/
+
+## Preguntas de la Guia
+**Q1. ¿Cuáles son las frecuencias significativas para las adquisiciones de EMG? ¿Son las mismas en todas las áreas del cuerpo, como el área facial?**
+
+Para las señales de electromiografía de superficie (sEMG), la banda de frecuencia típica que contiene la información de la actividad muscular se encuentra entre los 20 y los 450 Hz. Esta banda estándar se aplica para la evaluación de músculos esqueléticos voluntarios en general. Sin embargo, la distribución espectral exacta puede variar sutilmente dependiendo del área del cuerpo, ya que está ligada al tamaño del músculo y a la cantidad de fibras musculares. Por ejemplo, los músculos grandes de las extremidades superiores difieren de los músculos finos del rostro (controlados por menos unidades motoras). En el caso escogido del pulgar, al realizar el movimiento de pinza (_pitching_), estamos evaluando fibras diseñadas para la motricidad fina y precisión, pero su señal eléctrica superficial sigue siendo procesada óptimamente dentro de este mismo filtro pasabanda de 20-450 Hz. [1]
+
+**Q2. ¿Qué tipo de filtro es esencial al trabajar con señales EMG? ¿Por qué necesitamos aplicar dicho filtro?** 
+
+El filtro más esencial es el filtro pasabanda, ajustado habitualmente entre 20 y 450 Hz. Necesitamos aplicarlo porque las señales mioeléctricas captadas desde la superficie de la piel poseen amplitudes sumamente bajas, en el rango de los milivoltios o microvoltios. Debido a esta baja amplitud, la señal es altamente vulnerable a fuentes de ruido y artefactos mecánicos generados por el movimiento. Al filtrar la señal, eliminamos estas frecuencias indeseadas y nos aseguramos de que los datos limitados entregados por el sensor correspondan genuinamente a despolarizaciones musculares. [2]
+
+**Q3. ¿Cómo difiere la amplitud en cada contracción muscular? ¿Existe diferencia según la ubicación en el cuerpo?**
+
+La amplitud difiere directamente con la intensidad de la activación neuromuscular; en un estado de reposo, la línea base se mantiene cercana a 0 mV, mientras que al contraerse se evidencian ráfagas de mayor amplitud (por ejemplo, ±0.5 mV). Definitivamente existe una gran diferencia dependiendo de la ubicación anatómica. Músculos más grandes generarán voltajes superficiales mayores simplemente por la mayor cantidad de fibras musculares involucradas en la contracción, a diferencia de los músculos periféricos más pequeños. [3]
+
+**Q4. Muestra una captura de pantalla de una porción relevante de los datos de EMG (Sección D) de un músculo facial de interés. ¿Corresponde esta señal a lo que esperabas? ¿Por qué? ¿Qué emoción y acción realizaste? ¿Qué músculo activaste?**
+
+
+Debido a que escogimos el ejercicio del _pitching_ para este análisis enfoqué los electrodos a lo largo de la fibra del _abductor pollicis brevis_, situado en la base del pulgar de la mano y realizamos la abducción voluntaria del pulgar , ejecutando el movimiento de "pinza" o _pitching_ de forma repetitiva.
+La morfología de la señal cumplió con la teoría fisiológica: se observó una zona neutra de bajo voltaje durante la fase de relajación , seguida de ráfagas (_bursts_) de alta frecuencia y amplitud en el momento exacto en que las neuronas motoras inferiores desencadenaron los potenciales de acción en las células musculares para ejecutar el agarre. [4]
+
+
+**Q5. A tu leal saber y entender, ¿la amplitud del EMG es igual a la cantidad de fuerza que has generado con tu músculo?**
+
+No, no existe una equivalencia lineal estricta entre la amplitud de la señal (mV) y la fuerza mecánica producida (Newtons), aunque sí se encuentran altamente correlacionadas y pudimos verlo durante el laboratorio. A mayor requerimiento de fuerza, el sistema neuromuscular lógicamente recluta más unidades motoras y eleva la frecuencia de disparo de los potenciales de acción.
+
+Sin embargo, diversos factores complican esta relación directa en la superficie: el grosor del tejido adiposo, la alta impedancia de la piel, y la superposición de señales de músculos adyacentes (_crosstalk_). Además, durante episodios de fatiga, la amplitud puede mostrar un aumento inicial paradójico (por reclutamiento compensatorio) seguido de una reducción paulatina. Los estudios biomecánicos confirman esta falta de equivalencia 1:1 en la electromiografía superficial.
+
+## Bibliografia de las preguntas
+1. J. Moreno Jiménez, A. Hernández Zavala, and A. G. Morales Hernández, "High density surface electromyography: A review of technology and its applications," _Measurement and Control_, Apr. 2026, doi: 10.1177/00202940251396.
+2. J. L. Correa-Figueroa, E. Morales-Sánchez, J. A. Huerta-Ruelas, J. J. González-Barbosa, and C. R. Cárdenas-Pérez, "Sistema de Adquisición de Señales SEMG para la Detección de Fatiga Muscular," _Revista Mexicana de Ingeniería Biomédica_, vol. 37, no. 1, pp. 17-27, Jan.-Apr. 2016, doi: 10.17488/RMIB.37.1.4.
+3. J. J. Bernal Sánchez and E. C. Wilches Luna, "Electromiografía de superficie (EMGs) en pacientes adultos en cuidados intensivos: revisión exploratoria," _Revista Colombiana de Medicina Física y Rehabilitación_, vol. 31, no. 1, Jan.-Jun. 2021, doi: 10.28957/rcmfr.v31n1a1.
+4. S. Abbaspour, M. Lindén, H. Gholamhosseini, A. Naber, and M. Ortiz-Catalan, "Evaluation of surface EMG-based recognition algorithms for decoding hand movements," _Med. Biol. Eng. Comput._, vol. 58, no. 1, pp. 83-100, Jan. 2020, doi: 10.1007/s11517-019-02073-z.
+5. C. Disselhorst-Klug, T. Schmitz-Rode, and G. Rau, "Surface electromyography and muscle force: Limits in sEMG-force relationship and new approaches for applications," _Clinical Biomechanics_, vol. 24, no. 3, pp. 225-235, Mar. 2009, doi: 10.1016/j.clinbiomech.2008.08.003.
