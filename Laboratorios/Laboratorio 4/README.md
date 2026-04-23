@@ -299,7 +299,7 @@ for file_path in signal_files:
 Insertar imagen generada por Python aquí:
 ![Baseline Brazo](https://raw.githubusercontent.com/Nestor20193767/PULSEV-ISB-2026-I/main/Laboratorios/Laboratorio%204/Videos%20y%20Fotos/Ploteo%20de%20Se%C3%B1ales/BASELINE_BRAZO.jpeg)
 ```
-
+<img src="https://raw.githubusercontent.com/Nestor20193767/PULSEV-ISB-2026-I/main/Laboratorios/Laboratorio%204/Videos%20y%20Fotos/Ploteo%20de%20Se%C3%B1ales/BASELINE_BRAZO.jpeg" width="600" alt="Baseline Brazo">
 
 > *Figura: Señal EMG procesada en Python. Panel superior: señal cruda en mV. Panel inferior: envolvente RMS con ventana deslizante de 100 ms, que permite visualizar mejor la activación muscular a lo largo del tiempo.*
 
