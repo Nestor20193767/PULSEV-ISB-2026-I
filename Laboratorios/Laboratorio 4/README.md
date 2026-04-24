@@ -114,7 +114,7 @@ Durante la fase de reposo, la señal EMG mostró una línea base cercana a **0 m
       </td>
       <td align="center">
         <a href="https://drive.google.com/file/d/1tug-7IPiYGpyVxjVVvpaHIj_opvMvUmk/view?usp=sharing" target="_blank">
-          <img src="./Videos%20y%20Fotos/electrodos_brazo.jpg" width="300"><br>
+          <img src="./Videos%20y%20Fotos/electrodos_brazo.PNG" width="300"><br>
           <sub>▶ Ver video en Drive</sub>
         </a>
       </td>
