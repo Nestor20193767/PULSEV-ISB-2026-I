@@ -93,13 +93,34 @@ Se siguió el protocolo indicado en el **Home-Guide #1**, sección 6.2:
 
 Durante la fase de reposo, la señal EMG mostró una línea base cercana a **0 mV**, característica del silencio eléctrico muscular. Esto confirma que, en ausencia de activación voluntaria, no se generan potenciales de acción significativos en el músculo.
 
-#### 🎥 Video — Silencio eléctrico y conexiones
+#### 🎥 Videos — Silencio eléctrico y conexiones
 
-<a href="https://drive.google.com/file/d/1lu_aLHdgQIbCsKkL5fag_nHpBS-1xgAm/view?usp=sharing" target="_blank">
-  <img src="./Videos%20y%20Fotos/electrodos_mano.jpg" width="350">
-</a>
-
-> *Haz clic en la imagen para ver el video en Google Drive.*
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Mano</th>
+      <th>Brazo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td align="center">
+        <a href="https://drive.google.com/file/d/1lu_aLHdgQIbCsKkL5fag_nHpBS-1xgAm/view?usp=sharing" target="_blank">
+          <img src="./Videos%20y%20Fotos/electrodos_mano.jpg" width="300"><br>
+          <sub>▶ Ver video en Drive</sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://drive.google.com/file/d/1tug-7IPiYGpyVxjVVvpaHIj_opvMvUmk/view?usp=sharing" target="_blank">
+          <img src="./Videos%20y%20Fotos/electrodos_brazo.jpg" width="300"><br>
+          <sub>▶ Ver video en Drive</sub>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ### Señal en OpenSignals
 
