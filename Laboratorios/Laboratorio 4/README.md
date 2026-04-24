@@ -294,15 +294,19 @@ for file_path in signal_files:
 
 ## Discusión y Conclusiones
 
-- La señal EMG adquirida con BITalino mostró claramente la diferencia entre el estado de **reposo** (silencio eléctrico, ~0 mV) y las **fases de contracción muscular**, con amplitudes crecientes conforme se aumentaba la intensidad.
+- La señal EMG adquirida con BITalino permitió diferenciar claramente el estado de **reposo** de las **fases de contracción muscular**. En las señales de baseline de mano y bíceps se observó una actividad de menor amplitud, mientras que durante las contracciones aparecieron ráfagas de mayor amplitud asociadas a la activación muscular.
 
-- El reclutamiento progresivo de unidades motoras se evidenció en el incremento gradual de amplitud a lo largo de los 5 ciclos de contracción, coherente con la fisiología muscular.
+- Este comportamiento es coherente con la fisiología de la señal EMG superficial, ya que durante una contracción voluntaria aumenta el reclutamiento de unidades motoras y, por tanto, la actividad eléctrica registrada en la superficie de la piel.
 
-- Los músculos **de mayor tamaño** (flexor carpi radialis, trapezius) produjeron señales de mayor amplitud que los **músculos pequeños** (abductor pollicis brevis) o **faciales** (zygomaticus major), donde la señal fue más sutil pero igualmente detectable.
+- Al comparar los músculos evaluados, la señal del **bíceps** presentó una activación más evidente que la señal de la **mano**. Esto puede explicarse porque el bíceps braquial es un músculo de mayor tamaño y participa en una contracción más global, mientras que el abductor pollicis brevis está asociado a movimientos finos del pulgar y puede generar señales de menor amplitud relativa.
 
-- La envolvente RMS calculada en Python permite una interpretación más clara de la actividad muscular al suavizar las fluctuaciones rápidas de la señal cruda.
+- El análisis en el dominio de la frecuencia mediante **FFT** y el análisis tiempo-frecuencia mediante **espectrograma (STFT)** permitieron observar el contenido frecuencial de la señal EMG durante reposo y contracción. Esto es coherente con estudios recientes que analizan la sEMG en rangos aproximados de 20–450 Hz para conservar la información muscular relevante y reducir componentes asociadas a artefactos de movimiento o ruido.
 
-- Se confirma que la amplitud del EMG **no equivale directamente a la fuerza** generada, sino que es una estimación de la actividad eléctrica (reclutamiento de unidades motoras), influida además por factores como el tejido subcutáneo y la posición de los electrodos.
+- La amplitud del EMG **no equivale directamente a la fuerza muscular generada**. Aunque una mayor contracción suele producir mayor amplitud EMG, esta relación depende del procesamiento de la señal, la posición de los electrodos, el tejido subcutáneo, el contacto piel-electrodo y el posible crosstalk de músculos cercanos.
+
+- Entre las principales limitaciones del laboratorio se identifican la ausencia de una medición directa de fuerza, la posible variabilidad en la colocación de los electrodos y la presencia de ruido o artefactos por movimiento. Por ello, los resultados permiten interpretar la activación muscular, pero no cuantificar directamente la fuerza producida.
+  
+- Estos resultados coinciden con lo reportado por Lim et al. (2024), quienes describen el uso de señales sEMG para evaluar activación muscular y resaltan la importancia del análisis frecuencial y la calidad de señal. Asimismo, Ranaldi et al. (2022) indican que la relación entre amplitud sEMG y fuerza no es directa ni universal, sino que depende del procesamiento y de las condiciones experimentales.
 
 ---
 ## Referencias
@@ -312,6 +316,8 @@ for file_path in signal_files:
 3. Basmajian, J.V. & De Luca, C.J. *Muscles Alive: Their Functions Revealed by Electromyography*, 5th ed. Williams & Wilkins, 1985.
 4. Criswell, E. *Cram's Introduction to Surface Electromyography*. Jones & Bartlett Publishers, 2010.
 5. SENIAM — Recommended sensor placements: http://www.seniam.org/
+6. Lim, J., Lu, L., Goonewardena, K., Liu, J. Z., & Tan, Y. *Assessment of Self-report, Palpation, and Surface Electromyography Dataset During Isometric Muscle Contraction*. Scientific Data, 11, 208, 2024. https://doi.org/10.1038/s41597-024-03030-8
+7. Ranaldi, S., Corvini, G., De Marchis, C., & Conforto, S. *The Influence of the sEMG Amplitude Estimation Technique on the EMG–Force Relationship*. Sensors, 22(11), 3972, 2022. https://doi.org/10.3390/s22113972
 
 ---
 
@@ -330,7 +336,6 @@ El filtro más esencial es el filtro pasabanda, ajustado habitualmente entre 20 
 La amplitud difiere directamente con la intensidad de la activación neuromuscular; en un estado de reposo, la línea base se mantiene cercana a 0 mV, mientras que al contraerse se evidencian ráfagas de mayor amplitud (por ejemplo, ±0.5 mV). Definitivamente existe una gran diferencia dependiendo de la ubicación anatómica. Músculos más grandes generarán voltajes superficiales mayores simplemente por la mayor cantidad de fibras musculares involucradas en la contracción, a diferencia de los músculos periféricos más pequeños. [3]
 
 **Q4. Muestra una captura de pantalla de una porción relevante de los datos de EMG (Sección D) de un músculo facial de interés. ¿Corresponde esta señal a lo que esperabas? ¿Por qué? ¿Qué emoción y acción realizaste? ¿Qué músculo activaste?**
-
 
 Debido a que escogimos el ejercicio del _pitching_ para este análisis enfoqué los electrodos a lo largo de la fibra del _abductor pollicis brevis_, situado en la base del pulgar de la mano y realizamos la abducción voluntaria del pulgar , ejecutando el movimiento de "pinza" o _pitching_ de forma repetitiva.
 La morfología de la señal cumplió con la teoría fisiológica: se observó una zona neutra de bajo voltaje durante la fase de relajación , seguida de ráfagas (_bursts_) de alta frecuencia y amplitud en el momento exacto en que las neuronas motoras inferiores desencadenaron los potenciales de acción en las células musculares para ejecutar el agarre. [4]
