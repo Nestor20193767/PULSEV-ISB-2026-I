@@ -65,17 +65,18 @@ Los electrodos se posicionaron siguiendo la configuración bipolar estándar:
   <tbody>
     <tr>
       <td>1</td>
-      <td align="center">
-        <img src="./Videos%20y%20Fotos/electrodos_mano.jpg" width="300"><br>
+      <td align="center" width="500">
+        <img src="./Videos%20y%20Fotos/electrodos_mano.jpg" width="450"><br>
         <sub>Posicionamiento de los electrodos IN+ e IN− sobre los músculos abductores del pulgar y electrodo de referencia en el hueso pisiforme.</sub>
       </td>
-      <td align="center">
-        <img src="./Videos%20y%20Fotos/electrodos_brazo.PNG" width="300"><br>
+      <td align="center" width="500">
+        <img src="./Videos%20y%20Fotos/electrodos_brazo.PNG" width="450"><br>
         <sub>Posicionamiento de los electrodos en el brazo.</sub>
       </td>
     </tr>
   </tbody>
 </table>
+
 #### 📸 Foto de conexiones — BITalino y cables
 
 <img src="./Videos%20y%20Fotos/bitalino.jpeg" width="350">
