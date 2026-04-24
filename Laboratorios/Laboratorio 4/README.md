@@ -110,34 +110,36 @@ A continuación se presenta el ploteo de la señal EMG adquirida con OpenSignals
 <img src="./Videos%20y%20Fotos/open.jpeg" width="350">
 
 > *Figura: Señal EMG del músculo abductor del pulgar adquirida con BITalino. Se observan las fases de reposo (línea base ~0 mV) y las fases de contracción (picos de amplitud creciente). El eje X representa el tiempo [s] y el eje Y la amplitud de la señal [mV].*
+
+
 ### Análisis de la Señal
 
 #### Descripción general
 
-La señal EMG adquirida presenta las características típicas esperadas para una señal de electromiografía de superficie:
+La señal EMG adquirida presentó un comportamiento coherente con una señal de electromiografía superficial. Durante el reposo muscular, tanto en la mano como en el bíceps, se observó una señal de baja amplitud, asociada al silencio eléctrico o mínima activación voluntaria. En cambio, durante las contracciones se evidenciaron ráfagas de mayor amplitud, correspondientes al reclutamiento de unidades motoras.
 
-**En reposo (silencio eléctrico):**
-- Amplitud cercana a **0 mV**, con pequeñas fluctuaciones de ruido.
-- Ausencia de potenciales de acción detectables.
-- La línea base es estable, lo que indica buena calidad de contacto de los electrodos.
+**En reposo:**
+- La señal presentó menor amplitud y pequeñas fluctuaciones alrededor de la línea base.
+- Estas variaciones pueden asociarse a ruido instrumental, movimiento leve, contacto piel-electrodo o actividad muscular residual.
+- La baja amplitud observada es coherente con una condición de reposo muscular.
 
 **Durante la contracción muscular:**
-- Se observa un incremento claro de la amplitud, con valores de aproximadamente **±0.5 mV** en contracciones leves y hasta **±0.75 mV** (o más) en la contracción voluntaria máxima.
-- La señal es de naturaleza **estocástica** (irregular), lo cual es esperable ya que representa la suma de múltiples potenciales de acción de diferentes unidades motoras.
-- A mayor intensidad de contracción, mayor amplitud y mayor densidad de activaciones (reclutamiento de más unidades motoras).
+- Se observó un incremento claro de la amplitud de la señal EMG.
+- Las ráfagas de activación fueron más evidentes durante los momentos de contracción voluntaria.
+- La señal presentó un comportamiento irregular o estocástico, debido a que la EMG superficial representa la suma de potenciales de acción provenientes de múltiples unidades motoras.
 
 **Frecuencias de interés:**
-- Las frecuencias relevantes para el EMG de superficie se encuentran en el rango de **20–450 Hz**.
-- En músculos faciales (como el zygomaticus major), la amplitud es considerablemente menor debido al menor tamaño de las fibras musculares.
+- En el procesamiento de señales EMG superficiales suele emplearse un filtro pasabanda dentro de un rango aproximado de 20–450 Hz, ya que esta banda conserva gran parte de la información muscular y reduce componentes de baja frecuencia asociadas al movimiento, así como ruido de alta frecuencia.
+- En este laboratorio se visualizaron la señal temporal, la Transformada Rápida de Fourier (FFT) y el espectrograma (STFT), con el fin de observar el comportamiento de la señal en tiempo, frecuencia y tiempo-frecuencia.
 
-**Diferencias entre grupos musculares:**
+**Comparación entre músculos evaluados:**
 
-| Músculo | Amplitud observada | Observaciones |
-|---|---|---|
-| Flexor carpi radialis | Alta | Señal clara con buena separación reposo/contracción |
-| Abductor pollicis brevis | Media-baja | Músculo pequeño, menor amplitud |
-| Trapezius descendens | Alta | Buen contraste en activaciones |
-| Zygomaticus major | Baja | Músculo facial, señal sutil pero detectable |
+| Músculo evaluado | Zona | Acción realizada | Comportamiento observado |
+|---|---|---|---|
+| Abductor pollicis brevis | Mano / pulgar | Abducción del pulgar o movimiento de pinza | Señal de menor amplitud relativa, asociada a un músculo pequeño y a un movimiento fino |
+| Bíceps braquial | Brazo | Contracción voluntaria del bíceps | Señal de mayor amplitud relativa y ráfagas más evidentes durante la contracción |
+
+La diferencia entre ambas señales puede explicarse por el tamaño muscular, la cantidad de unidades motoras reclutadas y la facilidad de ubicación de los electrodos sobre el vientre muscular. El bíceps, al ser un músculo de mayor tamaño, tiende a generar una señal superficial más evidente que el músculo evaluado en la mano.
 
 ---
 
