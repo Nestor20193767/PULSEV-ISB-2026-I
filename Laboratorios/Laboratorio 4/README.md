@@ -146,9 +146,28 @@ A continuación se presenta el ploteo de la señal EMG adquirida con OpenSignals
 
 #### 📊 Ploteo — OpenSignals (r)evolution
 
-<img src="./Videos%20y%20Fotos/open.jpeg" width="350">
-
-> *Figura: Señal EMG del músculo abductor del pulgar adquirida con BITalino. Se observan las fases de reposo (línea base ~0 mV) y las fases de contracción (picos de amplitud creciente). El eje X representa el tiempo [s] y el eje Y la amplitud de la señal [mV].*
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Mano</th>
+      <th>Brazo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td align="center">
+        <img src="./Videos%20y%20Fotos/open.jpeg" width="300"><br>
+        <sub>Señal EMG del músculo abductor del pulgar adquirida con BITalino. Se observan las fases de reposo (línea base ~0 mV) y las fases de contracción (picos de amplitud creciente). El eje X representa el tiempo [s] y el eje Y la amplitud de la señal [mV].</sub>
+      </td>
+      <td align="center">
+        <img src="./Videos%20y%20Fotos/ploteo_brazo.PNG" width="300"><br>
+        <sub>Señal EMG del músculo del brazo adquirida con BITalino.</sub>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### Análisis de la Señal
