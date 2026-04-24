@@ -293,7 +293,7 @@ for file_path in signal_files:
 | Archivo | Descripción |
 |---|---|
 | [`señal_EMG.txt`](./Señal%20y%20Script) | Archivo raw exportado desde OpenSignals (r)evolution |
-| `ploteo_EMG.py` | Script de Python para procesamiento y visualización |
+| [`ploteo_EMG.py`](./Señal%20y%20Script/Script) | Script de Python para procesamiento y visualización |
 | `Videos y Fotos/` | Carpeta con capturas de fotos y videos del laboratorio |
 | `Ploteo de Señales/` | Carpeta con capturas de las señales con su fft y sft|
 
