@@ -9,17 +9,16 @@
 ## 📋 Tabla de Contenidos
 
 1. [Introducción](#introducción)
-2. [Objetivos](#objetivos)
-3. [Materiales y Conexiones](#materiales-y-conexiones)
-4. [Protocolo de Adquisición](#protocolo-de-adquisición)
-5. [Resultados](#resultados)
+2. [Materiales y Conexiones](#materiales-y-conexiones)
+3. [Protocolo de Adquisición](#protocolo-de-adquisición)
+4. [Resultados](#resultados)
    - [Silencio Eléctrico / Reposo](#silencio-eléctrico--reposo)
    - [Señal en OpenSignals](#señal-en-opensignals)
    - [Análisis de la Señal](#análisis-de-la-señal)
-6. [Ploteo en Python](#ploteo-en-python)
-7. [Archivos](#archivos)
-8. [Discusión y Conclusiones](#discusión-y-conclusiones)
-9. [Referencias](#referencias)
+5. [Ploteo en Python](#ploteo-en-python)
+6. [Archivos](#archivos)
+7. [Discusión y Conclusiones](#discusión-y-conclusiones)
+8. [Referencias](#referencias)
 
 ---
 
@@ -28,16 +27,6 @@
 La Electromiografía (EMG) es una técnica que permite registrar la actividad eléctrica producida por los músculos esqueléticos. Cuando el sistema nervioso envía una señal a través de las motoneuronas superiores e inferiores, se genera un potencial de acción que produce una contracción muscular visible y medible eléctricamente.
 
 En esta práctica se utilizó el sistema **BITalino (r)evolution** con el sensor EMG ensamblado para adquirir señales musculares en diferentes grupos musculares, explorando la variación de amplitud y frecuencia de las señales según la intensidad de contracción y la ubicación corporal.
-
----
-
-## Objetivos
-
-- ✅ Realizar adquisiciones de señal EMG en tiempo real con BITalino.
-- ✅ Explorar diferentes posiciones de electrodos en distintos grupos musculares.
-- ✅ Entender cómo varía la señal ante cambios en la actividad muscular.
-- ✅ Familiarizarse con las frecuencias de interés del EMG (20–450 Hz).
-- ✅ Procesar y visualizar la señal en Python.
 
 ---
 
@@ -346,9 +335,9 @@ La morfología de la señal cumplió con la teoría fisiológica: se observó un
 
 **Q5. A tu leal saber y entender, ¿la amplitud del EMG es igual a la cantidad de fuerza que has generado con tu músculo?**
 
-No, no existe una equivalencia lineal estricta entre la amplitud de la señal (mV) y la fuerza mecánica producida (Newtons), aunque sí se encuentran altamente correlacionadas y pudimos verlo durante el laboratorio. A mayor requerimiento de fuerza, el sistema neuromuscular lógicamente recluta más unidades motoras y eleva la frecuencia de disparo de los potenciales de acción.
-
+No, no existe una equivalencia lineal estricta entre la amplitud de la señal (mV) y la fuerza mecánica producida (Newtons), aunque sí se encuentran altamente correlacionadas y pudimos verlo durante el laboratorio. A mayor requerimiento de fuerza, el sistema neuromuscular lógicamente recluta más unidades motoras y eleva la frecuencia de disparo de los potenciales de acción. 
 Sin embargo, diversos factores complican esta relación directa en la superficie: el grosor del tejido adiposo, la alta impedancia de la piel, y la superposición de señales de músculos adyacentes (_crosstalk_). Además, durante episodios de fatiga, la amplitud puede mostrar un aumento inicial paradójico (por reclutamiento compensatorio) seguido de una reducción paulatina. Los estudios biomecánicos confirman esta falta de equivalencia 1:1 en la electromiografía superficial.
+
 ---
 
 ## Bibliografia de las preguntas
