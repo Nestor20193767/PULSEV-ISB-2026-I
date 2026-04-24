@@ -19,6 +19,7 @@
 6. [Archivos](#archivos)
 7. [Discusión y Conclusiones](#discusión-y-conclusiones)
 8. [Referencias](#referencias)
+9. [Preguntas de la Guia](#Preguntas-de-la-Guia)
 
 ---
 
