@@ -1,4 +1,4 @@
-# Laboratorio N.º 4: Adquisición y análisis de señales ECG en distintas condiciones fisiológicas
+# Laboratorio N.º 5: Adquisición y análisis de señales ECG en distintas condiciones fisiológicas
 
 ## 1. Introducción
 
