@@ -2,11 +2,11 @@
 
 ## 1. Introducción
 
-En este laboratorio se realizó la adquisición de señales electrocardiográficas (ECG) utilizando el sistema BITalino y electrodos superficiales colocados según las derivaciones bipolares de Einthoven I, II y III. El objetivo principal fue observar cómo varía la señal ECG bajo diferentes condiciones fisiológicas: reposo, hiperventilación, actividad física y contención voluntaria de la respiración.
+El electrocardiograma (ECG) es una técnica no invasiva utilizada para registrar la actividad eléctrica del corazón desde la superficie corporal. Debido a su carácter rápido, accesible y de bajo costo, continúa siendo una herramienta fundamental en la evaluación clínica, permitiendo detectar diversas patologías cardiovasculares [1]. Esta señal se origina por la propagación de potenciales de acción a través del tejido cardíaco, lo que da lugar a componentes característicos como la onda P, el complejo QRS y la onda T, asociados a los procesos de despolarización y repolarización del ciclo cardíaco [2].
 
-El ECG permite registrar la actividad eléctrica del corazón desde la superficie corporal. A partir de esta señal es posible identificar componentes característicos como la onda P, el complejo QRS y la onda T. Además, mediante la detección de los picos R se puede estimar la frecuencia cardíaca y analizar la variabilidad de los intervalos R-R.
+Para la adquisición del ECG se emplean sistemas de derivaciones que permiten observar la actividad eléctrica desde distintas direcciones. Entre estos, destacan las derivaciones bipolares propuestas por Willem Einthoven (I, II y III). La orientación de estas derivaciones influye en la morfología y amplitud de la señal registrada, así como en su interpretación [3].
 
-Durante el laboratorio se buscó comparar la señal ECG basal con señales obtenidas en condiciones que modifican la respuesta cardiorrespiratoria. Asimismo, se evaluó cómo la posición de los electrodos, el cambio de derivación y la presencia de movimiento pueden afectar la amplitud, morfología y calidad de la señal registrada.
+En este laboratorio se adquirieron señales ECG utilizando el sistema BITalino y electrodos superficiales, con el objetivo de analizar la variación de la señal bajo distintas condiciones fisiológicas: reposo, hiperventilación, actividad física y contención de la respiración. Asimismo, se evaluó el efecto de factores experimentales como la ubicación de los electrodos, el tipo de derivación y la presencia de artefactos por movimiento, los cuales afectan la calidad y características de la señal adquirida.
 
 ---
 
@@ -410,17 +410,7 @@ Finalmente, investigaciones recientes sobre la ubicación de electrodos muestran
 
 ## 7. Referencias
 
-1. PLUX Wireless Biosignals. (2021). *BITalino (r)evolution Home Guide #2: Electrocardiography (ECG)*. PLUX – Wireless Biosignals, S.A.
-
-2. Kim, J. W., Seok, H. S., & Shin, H. (2021). Is ultra-short-term heart rate variability valid in non-static conditions? *Frontiers in Physiology, 12*, 596060. https://doi.org/10.3389/fphys.2021.596060
-
-3. Sokas, D., Rapalis, A., Petrenas, A., Daukantas, S., & Marozas, V. (2021). Evaluation of stair climbing as an approach for estimating heart rate recovery in daily activities. *Proceedings of the 14th International Joint Conference on Biomedical Engineering Systems and Technologies - BIOSIGNALS*, 21–25. https://doi.org/10.5220/0010184500002865
-
-4. Castaño Usuga, F. A., Gissel, C., & Hernández, A. M. (2022). Motion artifact reduction in electrocardiogram signals through a redundant denoising independent component analysis method for wearable health care monitoring systems: Algorithm development and validation. *JMIR Medical Informatics, 10*(11), e40826. https://doi.org/10.2196/40826
-
-5. Sanjo, K., Hebiguchi, K., Tang, C., Rashed, E. A., Kodera, S., Togo, H., & Hirata, A. (2024). Sensitivity of electrocardiogram on electrode-pair locations for wearable devices: Computational analysis of amplitude and waveform distortion. *Biosensors, 14*(3), 153. https://doi.org/10.3390/bios14030153
-
-6. Bouten, J., Bourgois, J. G., Boone, J., & others. (2021). Heart rate and muscle oxygenation kinetics during dynamic apneas in breath-hold divers. *Frontiers in Physiology, 12*, 712629. https://doi.org/10.3389/fphys.2021.712629
-
-7. Sinha, M., Sinha, R., Ghate, J., & Sarnik, G. (2020). Impact of altered breathing patterns on interaction of EEG and heart rate variability. *Annals of Neurosciences, 27*(2), 67–74. https://doi.org/10.1177/0972753120950075
+1.  N. Rafie, A. H. Kashou, and P. A. Noseworthy, “ECG Interpretation: Clinical Relevance, Challenges, and Advances,” Hearts, vol. 2, no. 4, pp. 505–513, 2021.
+2.  Fundamentals of the electrocardiogram and common cardiac arrhythmias, 2024. https://doi.org/10.1016/j.mpaic.2023.11.014
+3.  PLUX Wireless Biosignals, BITalino (r)evolution Home Guide #2: Electrocardiography (ECG), 2021.
 
