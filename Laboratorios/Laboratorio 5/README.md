@@ -224,7 +224,9 @@ A continuación, se muestran ejemplos representativos por condición.
 
 ### 4.2. Señal basal
 
-![ECG basal derivación I](figures/A1_baseline_lead_I.png)
+![ECG basal derivación I](Fotos/Basal_Der1.png)
+![ECG basal derivación II](Fotos/Basal_Der2.png)
+![ECG basal derivación III](Fotos/Basal_Der3.png)
 
 En la condición basal se espera una señal más estable, debido a que el usuario se encontraba en reposo. Esta condición se utilizó como referencia para comparar los cambios observados en las demás actividades.
 
