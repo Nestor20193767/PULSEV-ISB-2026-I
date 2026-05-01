@@ -178,72 +178,16 @@ FC = 60 / RR_promedio
 Donde `RR` corresponde al intervalo entre dos picos R consecutivos.
 
 ---
-```python
-# ============================================================
-# Código de procesamiento de señal ECG
-# Laboratorio N.º 4 - Señales Biomédicas
-# ============================================================
 
-# 1. Importar librerías
-# import numpy as np
-# import pandas as pd
-# import matplotlib.pyplot as plt
-# from scipy.signal import butter, filtfilt, find_peaks
-
-# 2. Cargar señal ECG
-# Reemplazar con la ruta del archivo exportado desde OpenSignals
-# file_path = "data/ecg_basal.txt"
-
-# 3. Leer datos
-# data = ...
-
-# 4. Seleccionar canal ECG
-# ecg_signal = ...
-
-# 5. Definir frecuencia de muestreo
-# fs = ...
-
-# 6. Filtrado de la señal
-# Ejemplo:
-# def bandpass_filter(signal, lowcut, highcut, fs, order=4):
-#     nyq = 0.5 * fs
-#     low = lowcut / nyq
-#     high = highcut / nyq
-#     b, a = butter(order, [low, high], btype="band")
-#     return filtfilt(b, a, signal)
-
-# filtered_ecg = bandpass_filter(ecg_signal, lowcut=0.5, highcut=40, fs=fs)
-
-# 7. Detección de picos R
-# peaks, properties = find_peaks(filtered_ecg, distance=0.4*fs, prominence=...)
-
-# 8. Cálculo de intervalos R-R
-# rr_intervals = np.diff(peaks) / fs
-
-# 9. Cálculo de frecuencia cardíaca
-# heart_rate = 60 / np.mean(rr_intervals)
-
-# 10. Gráfica de la señal
-# time = np.arange(len(filtered_ecg)) / fs
-# plt.figure(figsize=(12, 4))
-# plt.plot(time, filtered_ecg, label="ECG filtrado")
-# plt.plot(time[peaks], filtered_ecg[peaks], "x", label="Picos R")
-# plt.xlabel("Tiempo (s)")
-# plt.ylabel("Amplitud")
-# plt.title("Señal ECG procesada")
-# plt.legend()
-# plt.grid(True)
-# plt.show()
-```
 Debido a que el código de procesamiento es extenso, se decidió colocarlo en un archivo independiente dentro del repositorio. Esto permite mantener el README más ordenado y facilita la revisión del flujo completo de análisis.
 
 El procesamiento completo de las señales ECG se encuentra disponible en el siguiente archivo:
 
-[Ver notebook de procesamiento ECG](./Lab4_ECG_processing.ipynb)
+[Ver notebook de procesamiento ECG](./Lab5_bitalino.ipynb)
 
 También se puede consultar una versión en script de Python:
 
-[Ver script de procesamiento ECG](./src/ecg_processing_lab4.py)
+[Ver script de procesamiento ECG](./Lab5_bitalino.py)
 
 ### 3.6. Variables analizadas
 
