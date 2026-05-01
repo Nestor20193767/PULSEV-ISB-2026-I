@@ -52,11 +52,11 @@ Se trabajó con configuraciones basadas en las derivaciones de Einthoven:
 
 Los electrodos se colocaron en una disposición tipo **clavícula-clavícula-cadera**, usando la cadera o cresta ilíaca como referencia. Esta configuración permite aproximar las derivaciones de Einthoven y, al colocar los electrodos cerca de zonas óseas, ayuda a reducir parte del ruido asociado a actividad muscular.
 
-Agregar imagen:
 
-```markdown
-![Esquema de derivaciones ECG](media/derivaciones_einthoven.jpg)
-```
+![Esquema de derivaciones ECG](Fotos/configuracion_einthoven.png)
+
+Figura 1. Referencia de la configuración Einthoven [3]
+
 
 ---
 
