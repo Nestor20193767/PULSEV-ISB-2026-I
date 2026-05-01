@@ -317,76 +317,27 @@ El promedio de frecuencia cardíaca basal de la Actividad 1 fue utilizado como r
 
 ## 5. Discusión
 
-### 5.1. Coherencia fisiológica de los resultados
+### 5.1. Coherencia fisiológica de los resultados 
+**Comparar con la literatura**
 
-La señal basal representa la condición de referencia del laboratorio. En esta etapa, el usuario se encontraba en reposo, por lo que se esperaba una frecuencia cardíaca relativamente estable, intervalos R-R más regulares y una menor cantidad de artefactos. Esta condición es importante porque permite comparar los cambios observados en las demás actividades.
-
-Durante la hiperventilación, los cambios en la respiración pueden modificar la interacción entre el sistema respiratorio y cardiovascular. En este tipo de condición, es posible observar variaciones en la frecuencia cardíaca y en los intervalos R-R, debido a la modulación autonómica asociada a la respiración. Además, la respiración rápida puede generar desplazamientos del tórax, movimiento de cables o variaciones en el contacto de los electrodos, lo que puede afectar la amplitud y estabilidad de la señal ECG.
-
-En la actividad post-ejercicio, se esperaba un aumento de la frecuencia cardíaca como respuesta fisiológica al esfuerzo físico. Al subir y bajar escaleras durante 10 minutos, aumenta la demanda metabólica del cuerpo y se activa la respuesta cardiovascular para incrementar el aporte de oxígeno a los tejidos. Esto debería reflejarse en intervalos R-R más cortos y una mayor frecuencia cardíaca inmediatamente después del ejercicio. Sin embargo, debido a que las tres derivaciones se registraron de forma consecutiva y no simultánea, la frecuencia cardíaca pudo disminuir progresivamente durante la recuperación, generando diferencias entre derivaciones que no necesariamente se deben solo a la posición de los electrodos.
-
-Durante la apnea voluntaria, la contención de la respiración puede modificar la regulación autonómica del corazón. Dependiendo de la duración y tolerancia del usuario, pueden aparecer cambios en la frecuencia cardíaca y en la variabilidad de los intervalos R-R. Aunque la ausencia de respiración puede reducir el movimiento torácico, también puede generar incomodidad, tensión muscular o pequeños movimientos involuntarios, los cuales pueden introducir ruido en la señal.
 
 ---
 
 ### 5.2. Comparación entre derivaciones
 
-Las diferencias observadas entre las derivaciones I, II y III se explican porque cada derivación registra la actividad eléctrica cardíaca desde un eje distinto. Por ello, la amplitud del complejo QRS, la polaridad de algunas ondas y la claridad de los picos R pueden variar entre derivaciones.
-
-En general, una derivación puede mostrar picos R más notorios si su eje de medición está más alineado con el vector eléctrico predominante del corazón. Por el contrario, si la orientación de la derivación no coincide adecuadamente con dicho vector, la amplitud puede disminuir o la morfología puede cambiar.
-
-También es importante considerar que pequeñas diferencias en la colocación de electrodos, presión de contacto, adhesión, impedancia de la piel o movimiento de los cables pueden afectar la señal registrada. Por esta razón, no todas las diferencias entre derivaciones deben interpretarse únicamente como cambios fisiológicos.
 
 ---
 
-### 5.3. Artefactos y problemas identificados
+### 5.3. Limitaciones 
 
-Durante la adquisición de señales ECG pueden aparecer distintos tipos de artefactos. En este laboratorio, los más probables fueron:
 
-- **Artefactos por movimiento:** generados por cambios de postura, respiración intensa, recuperación post-ejercicio o movimiento de cables.
-- **Ruido por contacto electrodo-piel:** asociado a mala adhesión, sudoración o limpieza insuficiente de la piel.
-- **Inestabilidad de la línea base:** relacionada con respiración, desplazamiento del tórax o variaciones mecánicas en los electrodos.
-- **Ruido muscular:** producido por tensión muscular, especialmente durante apnea o después del ejercicio.
-- **Diferencias por adquisición secuencial:** las derivaciones se tomaron una después de otra, por lo que el estado fisiológico del usuario pudo cambiar entre registros.
-
-Estos factores son importantes porque pueden modificar la amplitud, forma y estabilidad de la señal ECG. Por ello, el análisis debe diferenciar entre cambios fisiológicos reales y alteraciones producidas por el procedimiento experimental.
 
 ---
 
-### 5.4. Limitaciones del laboratorio
-
-Una primera limitación fue que las mediciones se realizaron en un solo usuario. Esto impide generalizar los resultados a una población más amplia, ya que la respuesta cardíaca y respiratoria puede variar según condición física, edad, estrés, postura, hidratación, respiración y otros factores individuales.
-
-Una segunda limitación fue la duración de los registros. Las ventanas de 20 a 30 segundos son útiles para observar la morfología del ECG y estimar la frecuencia cardíaca de manera aproximada, pero son limitadas para un análisis completo de variabilidad de la frecuencia cardíaca. En condiciones dinámicas, como post-ejercicio o recuperación, se requieren ventanas más largas para obtener métricas HRV más estables.
-
-Otra limitación importante fue que las derivaciones I, II y III no se registraron simultáneamente. Esto afecta especialmente a la condición post-ejercicio, ya que la frecuencia cardíaca disminuye progresivamente durante la recuperación. Por tanto, una diferencia entre derivaciones podría deberse tanto al eje eléctrico de medición como al cambio temporal del estado fisiológico.
-
-Finalmente, las condiciones de hiperventilación y apnea no fueron controladas con instrumentos respiratorios. No se midió volumen corriente, frecuencia respiratoria exacta ni saturación de oxígeno, por lo que la interpretación debe mantenerse como descriptiva y no clínica.
-
----
-
-### 5.5. Relación con la evidencia científica
-
-La literatura reciente respalda que el análisis de HRV en ventanas ultracortas puede ser útil, pero su validez depende mucho de la condición experimental. En condiciones no estáticas, como ejercicio o recuperación post-ejercicio, se necesita mayor duración de registro para obtener métricas más confiables. Esto es relevante para este laboratorio, ya que varias adquisiciones fueron de 20 a 30 segundos.
-
-En relación con el ejercicio físico, estudios sobre recuperación de frecuencia cardíaca indican que actividades cotidianas como subir escaleras pueden generar una respuesta cardiovascular suficiente para analizar la recuperación post-ejercicio. Esto coincide con lo esperado en este laboratorio, donde la actividad de escaleras debía elevar la frecuencia cardíaca y reducir los intervalos R-R.
-
-Respecto a los artefactos, los estudios en sistemas ECG portátiles y wearables muestran que el movimiento y el contacto electrodo-piel son factores críticos en la calidad de la señal. Esto permite explicar posibles distorsiones observadas durante hiperventilación, post-ejercicio o cambios rápidos de derivación.
-
-Finalmente, investigaciones recientes sobre la ubicación de electrodos muestran que la amplitud y morfología del ECG pueden cambiar según la posición del par de electrodos. Esto respalda la comparación realizada entre las derivaciones I, II y III, así como la necesidad de interpretar cuidadosamente las diferencias entre señales.
-
----
 
 ## 6. Conclusiones
 
-- Se logró adquirir señales ECG en condiciones de reposo, hiperventilación, post-ejercicio y apnea voluntaria.
-- La señal basal funcionó como referencia para comparar los cambios observados en las demás condiciones.
-- Después del ejercicio se esperaba una mayor frecuencia cardíaca y una reducción de los intervalos R-R, debido al aumento de la demanda cardiovascular.
-- La hiperventilación y la apnea pueden modificar la señal ECG por la interacción entre respiración, sistema nervioso autónomo y actividad cardíaca.
-- Las diferencias entre derivaciones se explican por la orientación del eje de medición respecto al vector eléctrico cardíaco.
-- La calidad de la señal ECG depende fuertemente de la correcta colocación de electrodos, el contacto piel-electrodo y la reducción de movimientos.
-- Las ventanas de adquisición de 20 a 30 segundos permiten una descripción inicial de la señal, pero son limitadas para un análisis robusto de HRV.
-- Para futuros laboratorios se recomienda registrar las derivaciones de forma simultánea, aumentar la duración de las mediciones y controlar mejor las condiciones respiratorias y de movimiento.
+
 
 ---
 
