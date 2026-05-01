@@ -138,10 +138,46 @@ Agregar evidencia:
 
 ### 3.5. Procesamiento de la señal ECG
 
-Para el análisis de las señales adquiridas se consideró el siguiente flujo general de procesamiento:
+Las señales fueron exportadas desde OpenSignals en formato `.txt` y procesadas en Python mediante Google Colab. 
+El flujo general de procesamiento fue el siguiente:
 
-Espacio para colocar el código utilizado:
+1. Carga de archivos `.txt` exportados desde OpenSignals.
+2. Lectura de la señal mediante `opensignalsreader`.
+3. Detección automática del canal válido.
+4. Centrado de la señal mediante resta de la media.
+5. Aplicación de filtro notch a 60 Hz para reducir interferencia eléctrica.
+6. Aplicación de filtro pasa banda de 0.5 a 40 Hz para conservar los componentes principales del ECG.
+7. Detección de picos R con `find_peaks`.
+8. Corrección automática de polaridad en señales invertidas.
+9. Cálculo de intervalos R-R.
+10. Estimación de frecuencia cardíaca media y mediana.
+11. Cálculo descriptivo de métricas HRV: SDNN, RMSSD y pNN50.
+12. Generación de gráficas por registro: señal cruda, señal filtrada con picos R, FFT y espectrograma.
 
+La frecuencia de muestreo utilizada en el procesamiento fue:
+
+```python
+fs = 1000  # Hz
+```
+
+El filtro aplicado fue:
+
+```python
+LOWCUT = 0.5      # Hz
+HIGHCUT = 40      # Hz
+NOTCH_FREQ = 60   # Hz
+```
+
+Las métricas principales se calcularon a partir de los picos R detectados:
+```python
+RR = diferencia temporal entre picos R consecutivos
+
+FC = 60 / RR_promedio
+```
+
+Donde `RR` corresponde al intervalo entre dos picos R consecutivos.
+
+---
 ```python
 # ============================================================
 # Código de procesamiento de señal ECG
@@ -199,6 +235,31 @@ Espacio para colocar el código utilizado:
 # plt.grid(True)
 # plt.show()
 ```
+Debido a que el código de procesamiento es extenso, se decidió colocarlo en un archivo independiente dentro del repositorio. Esto permite mantener el README más ordenado y facilita la revisión del flujo completo de análisis.
+
+El procesamiento completo de las señales ECG se encuentra disponible en el siguiente archivo:
+
+[Ver notebook de procesamiento ECG](./Lab4_ECG_processing.ipynb)
+
+También se puede consultar una versión en script de Python:
+
+[Ver script de procesamiento ECG](./src/ecg_processing_lab4.py)
+
+### 3.6. Variables analizadas
+
+| Variable | Descripción | Unidad |
+|---|---|---|
+| Duración | Tiempo total del registro | s |
+| Número de picos R | Cantidad de complejos QRS detectados | - |
+| Intervalo R-R promedio | Tiempo promedio entre picos R consecutivos | s |
+| Frecuencia cardíaca media | Frecuencia estimada a partir de los intervalos R-R | bpm |
+| Frecuencia cardíaca mediana | Mediana de la frecuencia cardíaca instantánea | bpm |
+| SDNN | Desviación estándar de los intervalos R-R | ms |
+| RMSSD | Raíz cuadrática media de diferencias sucesivas entre intervalos R-R | ms |
+| pNN50 | Porcentaje de diferencias sucesivas mayores a 50 ms | % |
+| Polaridad | Orientación detectada de la señal ECG | normal/invertida |
+
+Las métricas SDNN, RMSSD y pNN50 se interpretaron únicamente de manera descriptiva, ya que varias señales tuvieron duraciones cortas de aproximadamente 20 a 30 segundos.
 
 ---
 
