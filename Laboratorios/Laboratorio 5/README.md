@@ -234,7 +234,9 @@ En la condición basal se espera una señal más estable, debido a que el usuari
 
 ### 4.3. Señal durante hiperventilación
 
-![ECG hiperventilación](figures/A1_hyperventilation_rep1_lead_I.png)
+![ECG hiperventilación I](Fotos/Hyper_Der1.png)
+![ECG hiperventilación II](Fotos/Hyper_Der2.png)
+![ECG hiperventilación III](Fotos/Hyper_Der3.png)
 
 Durante la hiperventilación pueden aparecer cambios en la frecuencia cardíaca y en los intervalos R-R. Además, la respiración rápida puede introducir movimiento torácico y alterar la estabilidad de la línea base.
 
@@ -242,7 +244,10 @@ Durante la hiperventilación pueden aparecer cambios en la frecuencia cardíaca 
 
 ### 4.4. Señal post-ejercicio
 
-![ECG post-ejercicio](figures/A2_post_exercise_lead_I.png)
+![ECG post-ejercicio I](Fotos/Post_Exer_Der1.png)
+![ECG post-ejercicio II](Fotos/Post_Exer_Der2.png)
+![ECG post-ejercicio III](Fotos/Post_Exer_Der3.png)
+
 
 En la condición post-ejercicio se observó un aumento evidente de la frecuencia cardíaca. Esto se refleja en una mayor cantidad de picos R por unidad de tiempo y en intervalos R-R más cortos.
 
@@ -250,7 +255,9 @@ En la condición post-ejercicio se observó un aumento evidente de la frecuencia
 
 ### 4.5. Señal durante apnea voluntaria
 
-![ECG apnea voluntaria](figures/A3_apnea_lead_I.png)
+![ECG apnea voluntaria I](Fotos/Apnea_Der1.png)
+![ECG apnea voluntaria II](Fotos/Apnea_Der2.png)
+![ECG apnea voluntaria III](Fotos/Apnea_Der3.png)
 
 Durante la apnea voluntaria se observaron frecuencias cardíacas elevadas respecto a la condición basal. Esto puede asociarse tanto a cambios autonómicos como a incomodidad, tensión muscular o recuperación incompleta entre actividades.
 
@@ -280,7 +287,7 @@ Durante la apnea voluntaria se observaron frecuencias cardíacas elevadas respec
 
 ### 4.7. Comparación global de frecuencia cardíaca
 
-![Comparación global de frecuencia cardíaca](figures/Lab4_ECG_global_heart_rate_comparison.png)
+![Comparación global de frecuencia cardíaca](Fotos/Comp_Global.png)
 
 La frecuencia cardíaca media en condición basal se mantuvo aproximadamente entre 84 y 88 bpm. Durante la hiperventilación, los valores se mantuvieron cercanos a la condición basal, con aumentos leves en algunos registros. En la condición post-ejercicio se observaron los valores más altos, especialmente en la derivación I, donde la frecuencia cardíaca media fue aproximadamente 157 bpm. Durante la apnea también se registraron valores elevados, entre 127 y 136 bpm.
 
@@ -305,8 +312,9 @@ El promedio de frecuencia cardíaca basal de la Actividad 1 fue utilizado como r
 | Apnea | II | 127.12 | +41.29 |
 | Apnea | III | 129.02 | +43.19 |
 
-![Diferencia de FC vs basal](figures/Lab4_ECG_delta_hr_vs_baseline.png)
-
+![Diferencia de FC vs basal](Fotos/Comp_Basal_Hyper.png)
+![Diferencia de FC vs basal](Fotos/Comp_Post_Exer.png)
+![Diferencia de FC vs basal](Fotos/Comp_Apnea.png)
 ---
 
 ## 5. Discusión
