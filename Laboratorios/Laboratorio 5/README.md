@@ -185,10 +185,6 @@ El procesamiento completo de las señales ECG se encuentra disponible en el sigu
 
 [Ver notebook de procesamiento ECG](./Lab5_bitalino.ipynb)
 
-También se puede consultar una versión en script de Python:
-
-[Ver script de procesamiento ECG](./lab5_bitalino.py)
-
 ### 3.6. Variables analizadas
 
 | Variable | Descripción | Unidad |
@@ -234,10 +230,12 @@ En la condición basal se espera una señal más estable, debido a que el usuari
 
 ### 4.3. Señal durante hiperventilación
 
-![ECG hiperventilación I](Fotos/Hyper_Der1.png)
-![ECG hiperventilación II](Fotos/Hyper_Der2.png)
-![ECG hiperventilación III](Fotos/Hyper_Der3.png)
-
+![ECG hiperventilación I](Fotos/Hyper1_Der1.png)
+![ECG hiperventilación II](Fotos/Hyper1_Der2.png)
+![ECG hiperventilación III](Fotos/Hyper1_Der3.png)
+![ECG hiperventilación I](Fotos/Hyper2_Der1.png)
+![ECG hiperventilación II](Fotos/Hyper2_Der2.png)
+![ECG hiperventilación III](Fotos/Hyper2_Der3.png)
 Durante la hiperventilación pueden aparecer cambios en la frecuencia cardíaca y en los intervalos R-R. Además, la respiración rápida puede introducir movimiento torácico y alterar la estabilidad de la línea base.
 
 ---
