@@ -21,7 +21,6 @@ Adquirir y analizar señales ECG en diferentes condiciones fisiológicas, compar
 - Registrar señales ECG utilizando las derivaciones I, II y III.
 - Comparar la señal basal con señales adquiridas después de hiperventilación, actividad física y contención de la respiración.
 - Identificar cambios en la frecuencia cardíaca, intervalos R-R, amplitud y calidad visual de la señal.
-- Reconocer posibles artefactos asociados al movimiento, respiración, sudoración o contacto electrodo-piel.
 - Discutir la coherencia fisiológica de los resultados obtenidos con base en literatura científica reciente.
 
 ---
@@ -38,31 +37,10 @@ Adquirir y analizar señales ECG en diferentes condiciones fisiológicas, compar
 | Computadora | Equipo utilizado para visualizar, registrar y almacenar las señales |
 | OpenSignals | Software empleado para la adquisición de datos |
 | Cables de conexión | Conexión entre electrodos, sensor ECG y BITalino |
-| Alcohol y material de limpieza | Utilizados para preparar la piel antes de colocar los electrodos |
-
-Antes de colocar los electrodos, se limpió la zona de contacto con alcohol con el fin de reducir la impedancia piel-electrodo y mejorar la calidad de la señal. Además, se procuró evitar movimientos bruscos durante la adquisición, ya que estos pueden introducir artefactos en la señal ECG.
 
 ---
 
-### 3.2. Consideraciones de privacidad
-
-Las fotos y videos incluidos en este repositorio deben evitar mostrar el rostro del participante. Por ello, las imágenes utilizadas para documentar la metodología se enfocan únicamente en la colocación de electrodos, el sistema de adquisición y el procedimiento experimental.
-
-Ejemplo de imagen de colocación:
-
-```markdown
-![Colocación de electrodos sin rostro](media/colocacion_electrodos.jpg)
-```
-
-Ejemplo de video corto o GIF:
-
-```markdown
-![Registro experimental sin rostro](media/registro_ecg.gif)
-```
-
----
-
-### 3.3. Colocación de electrodos
+### 3.2. Colocación de electrodos
 
 Se trabajó con configuraciones basadas en las derivaciones de Einthoven:
 
@@ -72,7 +50,7 @@ Se trabajó con configuraciones basadas en las derivaciones de Einthoven:
 | Derivación II | RA (-) a LL (+) | Mide la actividad eléctrica desde el lado superior derecho hacia la región inferior izquierda |
 | Derivación III | LA (-) a LL (+) | Mide la actividad eléctrica desde el lado superior izquierdo hacia la región inferior izquierda |
 
-En la primera configuración, los electrodos se colocaron en una disposición tipo **clavícula-clavícula-cadera**, usando la cadera o cresta ilíaca como referencia. Esta configuración permite aproximar las derivaciones de Einthoven y, al colocar los electrodos cerca de zonas óseas, ayuda a reducir parte del ruido asociado a actividad muscular.
+Los electrodos se colocaron en una disposición tipo **clavícula-clavícula-cadera**, usando la cadera o cresta ilíaca como referencia. Esta configuración permite aproximar las derivaciones de Einthoven y, al colocar los electrodos cerca de zonas óseas, ayuda a reducir parte del ruido asociado a actividad muscular.
 
 Agregar imagen:
 
@@ -82,7 +60,7 @@ Agregar imagen:
 
 ---
 
-### 3.4. Actividades realizadas
+### 3.3. Actividades realizadas
 
 El laboratorio se dividió en tres actividades principales.
 
@@ -90,7 +68,7 @@ El laboratorio se dividió en tres actividades principales.
 
 #### Actividad 1: Señal basal e hiperventilación
 
-Primero se adquirió una señal ECG basal durante **30 segundos** con el usuario en reposo y con los electrodos colocados en la primera derivación.
+Primero se adquirió una señal ECG basal durante **30 segundos** con el usuario en reposo y con los electrodos colocados en las tres derivaciones.
 
 Luego, el usuario realizó una fase breve de **hiperventilación**. Inmediatamente después se registró la señal ECG durante **30 segundos** en cada una de las tres derivaciones:
 
@@ -161,15 +139,6 @@ Agregar evidencia:
 ### 3.5. Procesamiento de la señal ECG
 
 Para el análisis de las señales adquiridas se consideró el siguiente flujo general de procesamiento:
-
-1. Importación de los datos exportados desde OpenSignals.
-2. Selección del canal correspondiente al ECG.
-3. Conversión o normalización de la señal, si corresponde.
-4. Filtrado de la señal para reducir ruido de baja frecuencia, interferencia eléctrica o artefactos.
-5. Detección de picos R.
-6. Cálculo de intervalos R-R.
-7. Estimación de frecuencia cardíaca.
-8. Generación de gráficas comparativas por condición y derivación.
 
 Espacio para colocar el código utilizado:
 
