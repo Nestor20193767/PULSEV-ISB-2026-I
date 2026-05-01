@@ -209,132 +209,101 @@ Las métricas SDNN, RMSSD y pNN50 se interpretaron únicamente de manera descrip
 
 ## 4. Resultados
 
-### 4.1. Variables analizadas
+### 4.1. Gráficas obtenidas
 
-| Variable | Descripción | Unidad |
-|---|---|---|
-| Tiempo | Duración del registro ECG | s |
-| Amplitud ECG | Valor de la señal registrada | mV o unidades del sistema |
-| Picos R | Máximos asociados al complejo QRS | - |
-| Intervalo R-R | Tiempo entre picos R consecutivos | s |
-| Frecuencia cardíaca | Frecuencia estimada a partir de los intervalos R-R | bpm |
-| Calidad de señal | Evaluación visual de ruido, artefactos y estabilidad | Cualitativa |
+Para cada señal se generó una figura con cuatro paneles:
 
-La frecuencia cardíaca se puede estimar mediante:
+1. Señal ECG cruda centrada.
+2. Señal ECG filtrada con picos R detectados.
+3. Espectro de frecuencia mediante FFT.
+4. Espectrograma mediante STFT.
 
-```text
-FC = 60 / promedio(RR)
-```
-
-donde `RR` corresponde al intervalo promedio entre picos R consecutivos.
+A continuación, se muestran ejemplos representativos por condición.
 
 ---
 
-### 4.2. Resultados de la señal basal
+### 4.2. Señal basal
 
-Agregar gráfica:
+![ECG basal derivación I](figures/A1_baseline_lead_I.png)
 
-```markdown
-![ECG basal](figures/ecg_basal.png)
-```
-
-Descripción:
-
-En la señal basal se espera observar una señal ECG más estable, debido a que el usuario se encontraba en reposo y con menor movimiento corporal. Esta condición sirve como referencia para comparar los cambios fisiológicos observados en las actividades posteriores.
-
-Completar con resultados obtenidos:
-
-| Parámetro | Valor |
-|---|---:|
-| Duración del registro | 30 s |
-| Frecuencia cardíaca estimada | Pendiente |
-| Intervalo R-R promedio | Pendiente |
-| Calidad visual de la señal | Pendiente |
+En la condición basal se espera una señal más estable, debido a que el usuario se encontraba en reposo. Esta condición se utilizó como referencia para comparar los cambios observados en las demás actividades.
 
 ---
 
-### 4.3. Resultados durante/post hiperventilación
+### 4.3. Señal durante hiperventilación
 
-Agregar gráfica:
+![ECG hiperventilación](figures/A1_hyperventilation_rep1_lead_I.png)
 
-```markdown
-![ECG hiperventilación](figures/ecg_hiperventilacion.png)
-```
-
-Descripción:
-
-Durante o después de la hiperventilación pueden observarse cambios en la frecuencia cardíaca y en la variabilidad de los intervalos R-R. Además, la respiración rápida puede introducir artefactos asociados al movimiento del tórax, los cables o los electrodos.
-
-Completar con resultados obtenidos:
-
-| Derivación | Frecuencia cardíaca estimada | Observaciones |
-|---|---:|---|
-| I | Pendiente | Pendiente |
-| II | Pendiente | Pendiente |
-| III | Pendiente | Pendiente |
+Durante la hiperventilación pueden aparecer cambios en la frecuencia cardíaca y en los intervalos R-R. Además, la respiración rápida puede introducir movimiento torácico y alterar la estabilidad de la línea base.
 
 ---
 
-### 4.4. Resultados post-ejercicio
+### 4.4. Señal post-ejercicio
 
-Agregar gráfica:
+![ECG post-ejercicio](figures/A2_post_exercise_lead_I.png)
 
-```markdown
-![ECG post ejercicio](figures/ecg_post_ejercicio.png)
-```
-
-Descripción:
-
-Después de la actividad física se espera observar un aumento de la frecuencia cardíaca, reflejado en intervalos R-R más cortos. También puede presentarse mayor ruido debido a respiración agitada, sudoración, movimiento residual o cambios en el contacto electrodo-piel.
-
-Completar con resultados obtenidos:
-
-| Derivación | Frecuencia cardíaca estimada | Observaciones |
-|---|---:|---|
-| I | Pendiente | Pendiente |
-| II | Pendiente | Pendiente |
-| III | Pendiente | Pendiente |
+En la condición post-ejercicio se observó un aumento evidente de la frecuencia cardíaca. Esto se refleja en una mayor cantidad de picos R por unidad de tiempo y en intervalos R-R más cortos.
 
 ---
 
-### 4.5. Resultados durante apnea voluntaria
+### 4.5. Señal durante apnea voluntaria
 
-Agregar gráfica:
+![ECG apnea voluntaria](figures/A3_apnea_lead_I.png)
 
-```markdown
-![ECG apnea voluntaria](figures/ecg_apnea.png)
-```
-
-Descripción:
-
-Durante la contención de la respiración pueden observarse cambios en el ritmo cardíaco y en la variabilidad de los intervalos R-R. La ausencia de movimiento respiratorio puede reducir algunos artefactos torácicos, aunque la incomodidad durante la apnea también puede generar tensión muscular o pequeños movimientos.
-
-Completar con resultados obtenidos:
-
-| Derivación | Frecuencia cardíaca estimada | Observaciones |
-|---|---:|---|
-| I | Pendiente | Pendiente |
-| II | Pendiente | Pendiente |
-| III | Pendiente | Pendiente |
+Durante la apnea voluntaria se observaron frecuencias cardíacas elevadas respecto a la condición basal. Esto puede asociarse tanto a cambios autonómicos como a incomodidad, tensión muscular o recuperación incompleta entre actividades.
 
 ---
 
-### 4.6. Comparación general de condiciones
+### 4.6. Tabla resumen de resultados
 
-Completar con los valores obtenidos luego del procesamiento:
+| Condición | Derivación | Duración (s) | Picos R | FC media (bpm) | RR promedio (s) | Observación |
+|---|---:|---:|---:|---:|---:|---|
+| Basal | I | 31.20 | 43 | 84.51 | 0.727 | Señal invertida detectada |
+| Basal | II | 31.05 | 44 | 85.37 | 0.704 | Señal normal |
+| Basal | III | 37.20 | 52 | 87.61 | 0.720 | Señal normal |
+| Hiperventilación rep. 1 | I | 38.25 | 58 | 91.55 | 0.660 | Aumento leve de FC |
+| Hiperventilación rep. 1 | II | 30.60 | 43 | 85.33 | 0.708 | Similar a basal |
+| Hiperventilación rep. 1 | III | 31.35 | 44 | 83.56 | 0.723 | Similar a basal |
+| Hiperventilación rep. 2 | I | 30.30 | 44 | 89.92 | 0.684 | Señal invertida detectada |
+| Hiperventilación rep. 2 | II | 32.10 | 47 | 88.40 | 0.683 | Aumento leve de FC |
+| Hiperventilación rep. 2 | III | 36.00 | 53 | 88.71 | 0.684 | Aumento leve de FC |
+| Post-ejercicio | I | 30.75 | 80 | 157.01 | 0.383 | Mayor FC registrada |
+| Post-ejercicio | II | 31.65 | 72 | 137.21 | 0.438 | FC elevada |
+| Post-ejercicio | III | 60.60 | 126 | 124.83 | 0.481 | FC elevada, registro más largo |
+| Apnea | I | 21.45 | 49 | 136.36 | 0.440 | FC elevada |
+| Apnea | II | 21.90 | 46 | 127.12 | 0.472 | FC elevada |
+| Apnea | III | 28.80 | 62 | 129.02 | 0.465 | FC elevada |
 
-| Condición | Derivación | FC estimada | Calidad de señal | Observación principal |
-|---|---|---:|---|---|
-| Basal | I | Pendiente | Pendiente | Señal de referencia |
-| Hiperventilación | I | Pendiente | Pendiente | Pendiente |
-| Hiperventilación | II | Pendiente | Pendiente | Pendiente |
-| Hiperventilación | III | Pendiente | Pendiente | Pendiente |
-| Post-ejercicio | I | Pendiente | Pendiente | Pendiente |
-| Post-ejercicio | II | Pendiente | Pendiente | Pendiente |
-| Post-ejercicio | III | Pendiente | Pendiente | Pendiente |
-| Apnea | I | Pendiente | Pendiente | Pendiente |
-| Apnea | II | Pendiente | Pendiente | Pendiente |
-| Apnea | III | Pendiente | Pendiente | Pendiente |
+---
+
+### 4.7. Comparación global de frecuencia cardíaca
+
+![Comparación global de frecuencia cardíaca](figures/Lab4_ECG_global_heart_rate_comparison.png)
+
+La frecuencia cardíaca media en condición basal se mantuvo aproximadamente entre 84 y 88 bpm. Durante la hiperventilación, los valores se mantuvieron cercanos a la condición basal, con aumentos leves en algunos registros. En la condición post-ejercicio se observaron los valores más altos, especialmente en la derivación I, donde la frecuencia cardíaca media fue aproximadamente 157 bpm. Durante la apnea también se registraron valores elevados, entre 127 y 136 bpm.
+
+---
+
+### 4.8. Comparación respecto al promedio basal
+
+El promedio de frecuencia cardíaca basal de la Actividad 1 fue utilizado como referencia descriptiva. Esta comparación debe interpretarse con cautela, ya que no se registró una señal basal inmediatamente antes de las actividades de ejercicio y apnea.
+
+| Condición | Derivación | FC media (bpm) | Diferencia vs basal (bpm) |
+|---|---:|---:|---:|
+| Hiperventilación rep. 1 | I | 91.55 | +5.72 |
+| Hiperventilación rep. 1 | II | 85.33 | -0.50 |
+| Hiperventilación rep. 1 | III | 83.56 | -2.27 |
+| Hiperventilación rep. 2 | I | 89.92 | +4.09 |
+| Hiperventilación rep. 2 | II | 88.40 | +2.57 |
+| Hiperventilación rep. 2 | III | 88.71 | +2.88 |
+| Post-ejercicio | I | 157.01 | +71.18 |
+| Post-ejercicio | II | 137.21 | +51.38 |
+| Post-ejercicio | III | 124.83 | +39.00 |
+| Apnea | I | 136.36 | +50.53 |
+| Apnea | II | 127.12 | +41.29 |
+| Apnea | III | 129.02 | +43.19 |
+
+![Diferencia de FC vs basal](figures/Lab4_ECG_delta_hr_vs_baseline.png)
 
 ---
 
