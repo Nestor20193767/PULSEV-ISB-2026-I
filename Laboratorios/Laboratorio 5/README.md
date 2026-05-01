@@ -187,7 +187,7 @@ El procesamiento completo de las señales ECG se encuentra disponible en el sigu
 
 También se puede consultar una versión en script de Python:
 
-[Ver script de procesamiento ECG](./Lab5_bitalino.py)
+[Ver script de procesamiento ECG](./lab5_bitalino.py)
 
 ### 3.6. Variables analizadas
 
