@@ -318,26 +318,36 @@ El promedio de frecuencia cardíaca basal de la Actividad 1 fue utilizado como r
 ## 5. Discusión
 
 ### 5.1. Coherencia fisiológica de los resultados 
-**Comparar con la literatura**
+Los resultados obtenidos fueron coherentes con las condiciones fisiológicas evaluadas. En reposo, la frecuencia cardíaca basal se mantuvo entre 84 y 88 bpm, funcionando como referencia inicial del participante. Durante la hiperventilación, nuestros resultados mostraron cambios leves en la frecuencia cardíaca respecto al estado basal. La frecuencia cardíaca basal estuvo entre 84 y 88 bpm, mientras que durante hiperventilación los valores se mantuvieron aproximadamente entre 83 y 92 bpm. El mayor aumento se observó en la repetición 1 de la derivación I, con 91.55 bpm, lo que representa un incremento moderado frente al promedio basal. Estos resultados son parcialmente consistentes con lo reportado por Spiesshoefer et al. [4], quienes evaluaron los efectos de la hiperventilación voluntaria sobre parámetros hemodinámicos y de balance simpático-vagal. En sujetos sanos, los autores encontraron que la hiperventilación voluntaria se asoció con predominio simpático, una disminución del 50% en la sensibilidad barorrefleja media y un aumento del 29% en el índice cardíaco respecto al basal. Esto sugiere que la hiperventilación puede generar una respuesta autonómica y cardiovascular medible. Sin embargo, en nuestro caso el aumento de frecuencia cardíaca fue pequeño y no se observó de forma uniforme en todas las derivaciones. Esta diferencia puede deberse a varios factores metodológicos. Por tanto, los resultados sugieren que la hiperventilación produjo una respuesta cardiovascular leve, pero no permiten afirmar una activación autonómica marcada como la observada en estudios controlados. 
 
+En la condición post-ejercicio se observó el mayor incremento de frecuencia cardíaca. El promedio basal fue de aproximadamente 85.83 bpm, mientras que después de subir y bajar escaleras la frecuencia cardíaca alcanzó 157.01 bpm en la derivación I, 137.21 bpm en la derivación II y 124.83 bpm en la derivación III. Esto representa incrementos de +71.18, +51.38 y +39.00 bpm respecto al basal, respectivamente. Este aumento es consistente con la literatura, ya que la subida de escaleras es una actividad capaz de generar una respuesta cardiovascular medible. En la literatura se reporta que subir entre 5 y 10 m de altitud puede aumentar la frecuencia cardíaca en aproximadamente 20–30 bpm, y propusieron la subida de escaleras como una alternativa práctica para evaluar la recuperación de frecuencia cardíaca post-ejercicio [5]. En nuestro caso, el incremento fue mayor, lo cual puede explicarse porque el participante realizó 10 minutos de actividad física continua subiendo y bajando escaleras, en lugar de una prueba breve y estandarizada.
 
----
+Además, se observó una disminución progresiva de la frecuencia cardíaca entre las derivaciones I, II y III. Esto probablemente refleja el proceso de recuperación cardíaca, ya que las derivaciones fueron registradas de forma consecutiva y no simultánea. Por ello, la diferencia entre derivaciones no debe atribuirse únicamente al eje eléctrico de medición, sino también al tiempo transcurrido después del ejercicio.
 
-### 5.2. Comparación entre derivaciones
+Durante la apnea voluntaria, la frecuencia cardíaca se mantuvo elevada, con valores entre 127.12 y 136.36 bpm, frente a un promedio basal aproximado de 85.83 bpm. Este resultado no coincide completamente con lo reportado por Hassan et al. [6], quienes compararon respiración normal y "breath holding" en sujetos sanos y encontraron que la frecuencia cardíaca promedio fue 8% menor durante "breath holding". En nuestro caso, la FC aumentó entre +41.29 y +50.53 bpm respecto al basal, lo cual sugiere que la maniobra pudo no haberse realizado en una condición de reposo controlado. También pudieron influir la incomodidad, tensión muscular, ansiedad o recuperación incompleta.
 
-
----
-
-### 5.3. Limitaciones 
-
-
+Finalmente, las métricas de variabilidad de la frecuencia cardíaca (HRV) en el dominio del tiempo (SDNN, RMSSD y pNN50) se consideraron únicamente de forma descriptiva. Aunque es posible calcularlas a partir de los registros obtenidos, la duración de 20–30 s resulta limitada para un análisis robusto, especialmente en condiciones dinámicas como el ejercicio o la recuperación. Estudios recientes han mostrado que, si bien es posible estimar HRV en ventanas ultracortas, en contextos no estáticos se requieren tiempos de medición mayores (≥120 s) para obtener resultados confiables, e incluso algunas métricas pueden no ser válidas en estas condiciones [7].
 
 ---
+### 5.2. Limitaciones 
 
+La principal limitación fue que el laboratorio se realizó con un solo participante, por lo que los resultados no pueden generalizarse. Además, la señal basal solo fue registrada durante la Actividad 1, por lo que las comparaciones con post-ejercicio y apnea deben interpretarse de forma descriptiva.
+
+Otra limitación importante fue que las derivaciones I, II y III fueron adquiridas de manera consecutiva y no simultánea. Esto afecta especialmente la condición post-ejercicio, ya que la frecuencia cardíaca disminuye progresivamente durante la recuperación. Por ello, parte de la diferencia entre derivaciones puede deberse al tiempo transcurrido después del esfuerzo.
+
+Asimismo, se debe considerar que los registros fueron cortos. Aunque permiten estimar frecuencia cardíaca y detectar picos R, no son ideales para un análisis completo de HRV. Por ello, las métricas SDNN, RMSSD y pNN50 no deben interpretarse como resultados clínicos concluyentes.
+
+---
 
 ## 6. Conclusiones
 
+Se logró adquirir y procesar señales ECG en las derivaciones I, II y III usando BITalino y Python. La condición basal presentó frecuencias cardíacas medias entre 84 y 88 bpm, mientras que la hiperventilación produjo cambios leves respecto al reposo.
 
+La condición post-ejercicio generó el mayor incremento de frecuencia cardíaca, alcanzando hasta 157.01 bpm, lo cual es coherente con la respuesta cardiovascular al esfuerzo físico. Durante la apnea también se observaron frecuencias elevadas, aunque su interpretación requiere cautela por la ausencia de un baseline inmediato previo.
+
+Las diferencias entre derivaciones se explican por la orientación del eje eléctrico, la posición de los electrodos y posibles variaciones en el contacto electrodo-piel. Algunas señales invertidas no invalidan el registro, siempre que los picos R sean identificables.
+
+Para futuros laboratorios se recomienda registrar un baseline antes de cada actividad, adquirir derivaciones de forma simultánea si es posible, controlar mejor las condiciones respiratorias y mantener tiempos de registro homogéneos.
 
 ---
 
@@ -346,4 +356,9 @@ El promedio de frecuencia cardíaca basal de la Actividad 1 fue utilizado como r
 1.  N. Rafie, A. H. Kashou, and P. A. Noseworthy, “ECG Interpretation: Clinical Relevance, Challenges, and Advances,” Hearts, vol. 2, no. 4, pp. 505–513, 2021.
 2.  Fundamentals of the electrocardiogram and common cardiac arrhythmias, 2024. https://doi.org/10.1016/j.mpaic.2023.11.014
 3.  PLUX Wireless Biosignals, BITalino (r)evolution Home Guide #2: Electrocardiography (ECG), 2021.
+4.  J. Spiesshoefer, S. Becker, I. Tuleta, M. Mohr, G. P. Diller, M. Emdin, A. R. Florian, A. Yilmaz, M. Boentert, and A. Giannoni, “Impact of simulated hyperventilation and periodic breathing on sympatho-vagal balance and hemodynamics in patients with and without heart failure,” *Respiration*, vol. 98, no. 6, pp. 482–494, 2019, doi: 10.1159/000502155.
+5.  D. Sokas, A. Rapalis, A. Petrenas, S. Daukantas, and V. Marozas, “Evaluation of stair climbing as an approach for estimating heart rate recovery in daily activities,” in *BIOSTEC 2021: Proceedings of the 14th International Joint Conference on Biomedical Engineering Systems and Technologies, Vol. 4: BIOSIGNALS*, B. Bracken, A. Fred, and H. Gamboa, Eds. Setúbal, Portugal: SciTePress, 2021, pp. 21–25, doi: 10.5220/0010184500210025.
+6.  T. Hassan, B. Rahman, R. H. Sandler, and H. A. Mansy, “Effect of normal breathing and breath holding on seismocardiographic signals and heart rate,” in *Proc. IEEE Signal Processing in Medicine and Biology Symposium (SPMB)*, 2021.
+7.  Y. S. Kim, J. H. Shin, y J. H. Lee, “Ultra-short-term heart rate variability under dynamic conditions,” Frontiers in Physiology, vol. 12, art. 596060, 2021, doi: 10.3389/fphys.2021.596060.
+   
 
